@@ -1,0 +1,163 @@
+@()(implicit request: RequestHeader)
+	@main("任务管理")("missionManage") {
+		<style>
+				.genome-pre {
+					white-space: pre-wrap;
+					word-wrap: break-word;
+					border: 0px solid #ccc;
+					background-color: white;
+				}
+		</style>
+		<div class="page-content">
+
+			<div class="page-bar">
+				<ul class="page-breadcrumb">
+					<li>
+						<i class="fa fa fa-table"></i>
+						<a href="">任务管理</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="row-fluid">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="portlet blue-dark box">
+							<div class="portlet-title">
+								<div class="caption">
+									任务管理
+								</div>
+							</div>
+
+							<div class="portlet-body">
+								<div class="table-responsive">
+
+
+									<table class="display table table-bordered" id="missionTable" data-pagination="true" data-search="true"
+									data-toolbar="#toolbar" data-page-list="[10, 25, 50, 100, all]" data-multiple-search="true">
+										<thead>
+											<tr>
+												<th data-field="missionName" data-sortable="true">任务名</th>
+												<th data-field="state" data-sortable="true"
+												data-formatter="MissionManage.stateFmt"
+												>任务状态</th>
+												<th data-field="startTime" data-sortable="true">开始时间</th>
+												<th data-field="endTime" data-sortable="true">结束时间</th>
+												<th data-field="operate" data-formatter="MissionManage.operateFmt">操作</th>
+											</tr>
+										</thead>
+									</table>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+			<div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 650px">
+					<div class="modal-content">
+						<div class="modal-header bg-primary">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">
+								<i class="fa fa-wrench"></i>
+								<span id="lblAddTitle" style="font-weight: bold">保存参数方案</span>
+							</h4>
+						</div>
+						<form class="form-horizontal" id="configForm" action="" data-toggle="validator">
+							<div class="modal-body">
+								<div class="row-fluid">
+
+									<div class="form-group">
+										<label class="control-label col-sm-3">任务名:</label>
+										<div class="col-sm-6">
+											<input class="form-control" name="missionName" readonly/>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+										<label class="control-label col-sm-3">参数方案名:</label>
+										<div class="col-sm-6">
+											<input class="form-control" name="configName" />
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="modal-footer bg-info">
+								<input type="hidden" id="id" name="id" />
+								<button type="button" class="btn blue" onclick="MissionManage.saveConfig">
+									确定</button>
+								<button type="button" class="btn green" data-dismiss="modal">
+									取消</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div id="updateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog" style="width: 650px">
+					<div class="modal-content">
+						<div class="modal-header bg-primary">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">
+								<i class="fa fa-edit"></i>
+								<span id="lblAddTitle" style="font-weight: bold">修改任务名</span>
+							</h4>
+						</div>
+						<form class="form-horizontal" id="updateForm" action="" data-toggle="validator">
+							<div class="modal-body">
+								<div class="row-fluid">
+
+									<input hidden name="missionId">
+
+									<div class="form-group">
+										<label class="control-label col-sm-3">原始任务名:</label>
+										<div class="col-sm-6">
+											<input class="form-control" name="orignalMissionName" readonly/>
+										</div>
+									</div>
+
+
+									<div class="form-group">
+										<label class="control-label col-sm-3">新任务名:</label>
+										<div class="col-sm-6">
+											<input class="form-control" name="missionName" />
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="modal-footer bg-info">
+								<input type="hidden" id="id" name="id" />
+								<button type="button" class="btn blue" onclick="MissionManage.updateName">
+									确定</button>
+								<button type="button" class="btn green" data-dismiss="modal">
+									取消</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<script>
+
+				$(function () {
+					MissionManage.init
+
+				})
+		</script>
+
+
+	}

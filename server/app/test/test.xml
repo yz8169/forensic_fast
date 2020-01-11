@@ -1,0 +1,4207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <sample>
+        <basicInfo>
+            <id>584</id>
+            <gender>male</gender>
+            <type></type>
+            <fq>/mnt/d/forensic_database/user/13/mission/1301/workspace/input.txt</fq>
+            <kit type="multiplex_pcr" version="1.0.0">FiSeq Targeted DNA Prep kit</kit>
+            <sequencer type="ngs" version="3.0.0">MGIseq</sequencer>
+            <softWare type="AnalyseAndCalculate" version="0.9.1">setA</softWare>
+        </basicInfo>
+        <calResult>
+            <availableDepth>197592.0</availableDepth>
+            <totalDepth>238671.0</totalDepth>
+            <interlocusBalance>Pass</interlocusBalance>
+            <singleSource>Pass</singleSource>
+            <iSNP_Loci_Typed>100/100</iSNP_Loci_Typed>
+            <auto_Loci_Typed>29/31</auto_Loci_Typed>
+            <x_Loci_Typed>19/23</x_Loci_Typed>
+            <y_Loci_Typed>37/42</y_Loci_Typed>
+            <strAvg>432.8020833333333</strAvg>
+            <snpAvg>0.0</snpAvg>
+            <strSTD>1.243914294517692</strSTD>
+            <snpSTD>0.0</snpSTD>
+            <strDepthBelow30>15.0</strDepthBelow30>
+            <strDepthBelow100>25.0</strDepthBelow100>
+        </calResult>
+        <locusInfomations>
+            <Autosomal_STR>
+                <autoStr Locus="Amelogenin">
+                    <QCs/>
+                    <TotalDepth>1460</TotalDepth>
+                    <Genotypes>
+                        <Genotype>X</Genotype>
+                        <Genotype>Y</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="SRY">
+                    <QCs/>
+                    <TotalDepth>989</TotalDepth>
+                    <Genotypes>
+                        <Genotype>Y</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="Y-indel">
+                    <QCs/>
+                    <TotalDepth>1081</TotalDepth>
+                    <Genotypes>
+                        <Genotype>Y</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="CSF1PO">
+                    <QCs/>
+                    <TotalDepth>1071</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D10S1248">
+                    <QCs/>
+                    <TotalDepth>69</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                        <Genotype>15</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D10S1435">
+                    <QCs/>
+                    <TotalDepth>611</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D12S391">
+                    <QCs>
+                        <QC>Imbalance</QC>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>312</TotalDepth>
+                    <Genotypes>
+                        <Genotype>15</Genotype>
+                        <Genotype>18</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D13S317">
+                    <QCs/>
+                    <TotalDepth>1268</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>9</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D16S539">
+                    <QCs/>
+                    <TotalDepth>181</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>13</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D17S1301">
+                    <QCs>
+                        <QC>Stutter</QC>
+                    </QCs>
+                    <TotalDepth>299</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>13</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D18S51">
+                    <QCs/>
+                    <TotalDepth>110</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                        <Genotype>17</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D19S433">
+                    <QCs/>
+                    <TotalDepth>931</TotalDepth>
+                    <Genotypes>
+                        <Genotype>13</Genotype>
+                        <Genotype>13.2</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D1S1656">
+                    <QCs>
+                        <QC>Stutter</QC>
+                    </QCs>
+                    <TotalDepth>53</TotalDepth>
+                    <Genotypes>
+                        <Genotype>15</Genotype>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D20S482">
+                    <QCs>
+                        <QC>Stutter</QC>
+                    </QCs>
+                    <TotalDepth>344</TotalDepth>
+                    <Genotypes>
+                        <Genotype>14</Genotype>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D21S11">
+                    <QCs/>
+                    <TotalDepth>153</TotalDepth>
+                    <Genotypes>
+                        <Genotype>29</Genotype>
+                        <Genotype>30</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D22S1045">
+                    <QCs/>
+                    <TotalDepth>91</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>17</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D2S1338">
+                    <QCs/>
+                    <TotalDepth>814</TotalDepth>
+                    <Genotypes>
+                        <Genotype>24</Genotype>
+                        <Genotype>25</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D2S441">
+                    <QCs/>
+                    <TotalDepth>616</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>9.1</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D3S1358">
+                    <QCs/>
+                    <TotalDepth>2899</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D4S2408">
+                    <QCs/>
+                    <TotalDepth>2452</TotalDepth>
+                    <Genotypes>
+                        <Genotype>10</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D5S818">
+                    <QCs/>
+                    <TotalDepth>2119</TotalDepth>
+                    <Genotypes>
+                        <Genotype>10</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D6S1043">
+                    <QCs/>
+                    <TotalDepth>497</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>19</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D7S820">
+                    <QCs>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>598</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D8S1179">
+                    <QCs>
+                        <QC>Stutter</QC>
+                    </QCs>
+                    <TotalDepth>468</TotalDepth>
+                    <Genotypes>
+                        <Genotype>14</Genotype>
+                        <Genotype>15</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="D9S1122">
+                    <QCs/>
+                    <TotalDepth>395</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="FGA">
+                    <QCs/>
+                    <TotalDepth>127</TotalDepth>
+                    <Genotypes>
+                        <Genotype>25</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="Penta-D">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>4</TotalDepth>
+                    <Genotypes/>
+                </autoStr>
+                <autoStr Locus="Penta-E">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>1</TotalDepth>
+                    <Genotypes/>
+                </autoStr>
+                <autoStr Locus="TH01">
+                    <QCs>
+                        <QC>Stutter</QC>
+                    </QCs>
+                    <TotalDepth>740</TotalDepth>
+                    <Genotypes>
+                        <Genotype>7</Genotype>
+                        <Genotype>9</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="TPOX">
+                    <QCs/>
+                    <TotalDepth>1816</TotalDepth>
+                    <Genotypes>
+                        <Genotype>8</Genotype>
+                    </Genotypes>
+                </autoStr>
+                <autoStr Locus="vWA">
+                    <QCs/>
+                    <TotalDepth>557</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                        <Genotype>19</Genotype>
+                    </Genotypes>
+                </autoStr>
+            </Autosomal_STR>
+            <X_STR>
+                <xStr Locus="DXS10074">
+                    <QCs/>
+                    <TotalDepth>33</TotalDepth>
+                    <Genotypes>
+                        <Genotype>17</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS10075">
+                    <QCs/>
+                    <TotalDepth>183</TotalDepth>
+                    <Genotypes>
+                        <Genotype>20</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS10079">
+                    <QCs/>
+                    <TotalDepth>170</TotalDepth>
+                    <Genotypes>
+                        <Genotype>21</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS101">
+                    <QCs>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>288</TotalDepth>
+                    <Genotypes>
+                        <Genotype>25</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS10101">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>1</TotalDepth>
+                    <Genotypes/>
+                </xStr>
+                <xStr Locus="DXS10103">
+                    <QCs/>
+                    <TotalDepth>852</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS10135">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>1</TotalDepth>
+                    <Genotypes/>
+                </xStr>
+                <xStr Locus="DXS10148">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>6</TotalDepth>
+                    <Genotypes/>
+                </xStr>
+                <xStr Locus="DXS10159">
+                    <QCs/>
+                    <TotalDepth>141</TotalDepth>
+                    <Genotypes>
+                        <Genotype>24</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS10162">
+                    <QCs/>
+                    <TotalDepth>552</TotalDepth>
+                    <Genotypes>
+                        <Genotype>18</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS10164">
+                    <QCs/>
+                    <TotalDepth>382</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS6789">
+                    <QCs>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>777</TotalDepth>
+                    <Genotypes>
+                        <Genotype>20</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS6809">
+                    <QCs/>
+                    <TotalDepth>111</TotalDepth>
+                    <Genotypes>
+                        <Genotype>35</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS7132">
+                    <QCs>
+                        <QC>Stutter</QC>
+                    </QCs>
+                    <TotalDepth>204</TotalDepth>
+                    <Genotypes>
+                        <Genotype>14</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS7133">
+                    <QCs/>
+                    <TotalDepth>659</TotalDepth>
+                    <Genotypes>
+                        <Genotype>9</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS7423">
+                    <QCs/>
+                    <TotalDepth>426</TotalDepth>
+                    <Genotypes>
+                        <Genotype>15</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS7424">
+                    <QCs/>
+                    <TotalDepth>112</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS8378">
+                    <QCs/>
+                    <TotalDepth>169</TotalDepth>
+                    <Genotypes>
+                        <Genotype>10</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS981">
+                    <QCs/>
+                    <TotalDepth>110</TotalDepth>
+                    <Genotypes>
+                        <Genotype>14</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="DXS9902">
+                    <QCs>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>1296</TotalDepth>
+                    <Genotypes>
+                        <Genotype>10</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="GATA165B12">
+                    <QCs/>
+                    <TotalDepth>124</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="GATA31E08">
+                    <QCs/>
+                    <TotalDepth>619</TotalDepth>
+                    <Genotypes>
+                        <Genotype>7</Genotype>
+                    </Genotypes>
+                </xStr>
+                <xStr Locus="HPRTB">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>2</TotalDepth>
+                    <Genotypes/>
+                </xStr>
+            </X_STR>
+            <Y_STR>
+                <yStr Locus="DYF387S1a/b">
+                    <QCs/>
+                    <TotalDepth>70</TotalDepth>
+                    <Genotypes>
+                        <Genotype>38</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYF404S1a/b">
+                    <QCs/>
+                    <TotalDepth>396</TotalDepth>
+                    <Genotypes>
+                        <Genotype>15</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS19">
+                    <QCs/>
+                    <TotalDepth>67</TotalDepth>
+                    <Genotypes>
+                        <Genotype>15</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS385a/b">
+                    <QCs>
+                        <QC>Interpretation</QC>
+                        <QC>Analytical Threshold</QC>
+                        <QC>Imbalance</QC>
+                    </QCs>
+                    <TotalDepth>17</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS388">
+                    <QCs>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>210</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS389I">
+                    <QCs/>
+                    <TotalDepth>200</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS389II">
+                    <QCs/>
+                    <TotalDepth>125</TotalDepth>
+                    <Genotypes>
+                        <Genotype>27</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS390">
+                    <QCs/>
+                    <TotalDepth>561</TotalDepth>
+                    <Genotypes>
+                        <Genotype>23</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS391">
+                    <QCs/>
+                    <TotalDepth>979</TotalDepth>
+                    <Genotypes>
+                        <Genotype>10</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS392">
+                    <QCs/>
+                    <TotalDepth>226</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS393">
+                    <QCs>
+                        <QC>Stutter</QC>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>206</TotalDepth>
+                    <Genotypes>
+                        <Genotype>13</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS437">
+                    <QCs/>
+                    <TotalDepth>418</TotalDepth>
+                    <Genotypes>
+                        <Genotype>14</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS438">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>3</TotalDepth>
+                    <Genotypes/>
+                </yStr>
+                <yStr Locus="DYS439">
+                    <QCs/>
+                    <TotalDepth>450</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS444">
+                    <QCs/>
+                    <TotalDepth>219</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS447">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>1</TotalDepth>
+                    <Genotypes/>
+                </yStr>
+                <yStr Locus="DYS448">
+                    <QCs/>
+                    <TotalDepth>63</TotalDepth>
+                    <Genotypes>
+                        <Genotype>22</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS449">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>4</TotalDepth>
+                    <Genotypes/>
+                </yStr>
+                <yStr Locus="DYS456">
+                    <QCs/>
+                    <TotalDepth>1697</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS458">
+                    <QCs/>
+                    <TotalDepth>93</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS460">
+                    <QCs/>
+                    <TotalDepth>375</TotalDepth>
+                    <Genotypes>
+                        <Genotype>10</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS481">
+                    <QCs>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>352</TotalDepth>
+                    <Genotypes>
+                        <Genotype>24</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS505">
+                    <QCs/>
+                    <TotalDepth>288</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS508">
+                    <QCs/>
+                    <TotalDepth>276</TotalDepth>
+                    <Genotypes>
+                        <Genotype>10</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS518">
+                    <QCs>
+                        <QC>Interpretation</QC>
+                    </QCs>
+                    <TotalDepth>20</TotalDepth>
+                    <Genotypes>
+                        <Genotype>38</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS522">
+                    <QCs/>
+                    <TotalDepth>575</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS527a/b">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>1</TotalDepth>
+                    <Genotypes/>
+                </yStr>
+                <yStr Locus="DYS533">
+                    <QCs/>
+                    <TotalDepth>161</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS549">
+                    <QCs/>
+                    <TotalDepth>39</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS557">
+                    <QCs/>
+                    <TotalDepth>45</TotalDepth>
+                    <Genotypes>
+                        <Genotype>17</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS570">
+                    <QCs/>
+                    <TotalDepth>603</TotalDepth>
+                    <Genotypes>
+                        <Genotype>16</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS576">
+                    <QCs/>
+                    <TotalDepth>317</TotalDepth>
+                    <Genotypes>
+                        <Genotype>18</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS593">
+                    <QCs/>
+                    <TotalDepth>207</TotalDepth>
+                    <Genotypes>
+                        <Genotype>17</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS596">
+                    <QCs/>
+                    <TotalDepth>231</TotalDepth>
+                    <Genotypes>
+                        <Genotype>15</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS612">
+                    <QCs>
+                        <QC>Allele Count</QC>
+                    </QCs>
+                    <TotalDepth>217</TotalDepth>
+                    <Genotypes>
+                        <Genotype>35</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS626">
+                    <QCs>
+                        <QC>Analytical Threshold</QC>
+                    </QCs>
+                    <TotalDepth>4</TotalDepth>
+                    <Genotypes/>
+                </yStr>
+                <yStr Locus="DYS627">
+                    <QCs>
+                        <QC>Interpretation</QC>
+                    </QCs>
+                    <TotalDepth>15</TotalDepth>
+                    <Genotypes>
+                        <Genotype>22</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS635">
+                    <QCs/>
+                    <TotalDepth>423</TotalDepth>
+                    <Genotypes>
+                        <Genotype>21</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS643">
+                    <QCs>
+                        <QC>Interpretation</QC>
+                    </QCs>
+                    <TotalDepth>17</TotalDepth>
+                    <Genotypes>
+                        <Genotype>9</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS645">
+                    <QCs/>
+                    <TotalDepth>631</TotalDepth>
+                    <Genotypes>
+                        <Genotype>8</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="DYS722">
+                    <QCs/>
+                    <TotalDepth>146</TotalDepth>
+                    <Genotypes>
+                        <Genotype>12</Genotype>
+                    </Genotypes>
+                </yStr>
+                <yStr Locus="Y-GATA-H4">
+                    <QCs/>
+                    <TotalDepth>257</TotalDepth>
+                    <Genotypes>
+                        <Genotype>11</Genotype>
+                    </Genotypes>
+                </yStr>
+            </Y_STR>
+            <iSNP>
+                <isnp Locus="rs1000551">
+                    <QCs/>
+                    <TotalDepth>1801</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs10100663">
+                    <QCs/>
+                    <TotalDepth>2038</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1024676">
+                    <QCs/>
+                    <TotalDepth>839</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs10474433">
+                    <QCs/>
+                    <TotalDepth>2309</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs10490978">
+                    <QCs/>
+                    <TotalDepth>666</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs10501269">
+                    <QCs/>
+                    <TotalDepth>1275</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1054975">
+                    <QCs/>
+                    <TotalDepth>608</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs10765879">
+                    <QCs/>
+                    <TotalDepth>2612</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1104570">
+                    <QCs/>
+                    <TotalDepth>1386</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs11174191">
+                    <QCs/>
+                    <TotalDepth>1688</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs11714258">
+                    <QCs/>
+                    <TotalDepth>2833</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs11722834">
+                    <QCs/>
+                    <TotalDepth>2199</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs11745646">
+                    <QCs/>
+                    <TotalDepth>2239</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs11779762">
+                    <QCs/>
+                    <TotalDepth>771</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs11927356">
+                    <QCs/>
+                    <TotalDepth>1624</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs12042109">
+                    <QCs/>
+                    <TotalDepth>1650</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1206523">
+                    <QCs/>
+                    <TotalDepth>1738</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1217612">
+                    <QCs/>
+                    <TotalDepth>1505</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs12362773">
+                    <QCs/>
+                    <TotalDepth>3073</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs12386695">
+                    <QCs/>
+                    <TotalDepth>560</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs12605006">
+                    <QCs/>
+                    <TotalDepth>1931</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs12640116">
+                    <QCs/>
+                    <TotalDepth>1379</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs12924985">
+                    <QCs/>
+                    <TotalDepth>1276</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs13028059">
+                    <QCs/>
+                    <TotalDepth>684</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs13031497">
+                    <QCs/>
+                    <TotalDepth>1802</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs13113625">
+                    <QCs/>
+                    <TotalDepth>956</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs13255815">
+                    <QCs/>
+                    <TotalDepth>1304</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs13554">
+                    <QCs/>
+                    <TotalDepth>502</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1381964">
+                    <QCs/>
+                    <TotalDepth>1026</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1502770">
+                    <QCs/>
+                    <TotalDepth>1594</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs17062044">
+                    <QCs/>
+                    <TotalDepth>957</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs17137114">
+                    <QCs/>
+                    <TotalDepth>528</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1863370">
+                    <QCs/>
+                    <TotalDepth>2349</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs1898230">
+                    <QCs/>
+                    <TotalDepth>2887</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2122080">
+                    <QCs/>
+                    <TotalDepth>1026</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2157752">
+                    <QCs/>
+                    <TotalDepth>1021</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2164537">
+                    <QCs/>
+                    <TotalDepth>2464</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2188471">
+                    <QCs/>
+                    <TotalDepth>1948</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2235254">
+                    <QCs/>
+                    <TotalDepth>980</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2285914">
+                    <QCs/>
+                    <TotalDepth>622</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs238925">
+                    <QCs/>
+                    <TotalDepth>2423</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2453236">
+                    <QCs/>
+                    <TotalDepth>710</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2715107">
+                    <QCs/>
+                    <TotalDepth>2560</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2826949">
+                    <QCs/>
+                    <TotalDepth>1334</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2837768">
+                    <QCs/>
+                    <TotalDepth>969</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs2926143">
+                    <QCs/>
+                    <TotalDepth>2302</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs3801786">
+                    <QCs/>
+                    <TotalDepth>1693</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4075260">
+                    <QCs/>
+                    <TotalDepth>1001</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4235308">
+                    <QCs/>
+                    <TotalDepth>778</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4449484">
+                    <QCs/>
+                    <TotalDepth>2261</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4512160">
+                    <QCs/>
+                    <TotalDepth>967</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs451826">
+                    <QCs/>
+                    <TotalDepth>954</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4709032">
+                    <QCs/>
+                    <TotalDepth>1712</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4801083">
+                    <QCs/>
+                    <TotalDepth>1356</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4811868">
+                    <QCs/>
+                    <TotalDepth>883</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4813947">
+                    <QCs/>
+                    <TotalDepth>712</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4868851">
+                    <QCs/>
+                    <TotalDepth>885</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4878020">
+                    <QCs/>
+                    <TotalDepth>641</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs4971514">
+                    <QCs/>
+                    <TotalDepth>2243</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs507226">
+                    <QCs/>
+                    <TotalDepth>2768</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6106298">
+                    <QCs/>
+                    <TotalDepth>2964</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6421248">
+                    <QCs/>
+                    <TotalDepth>1726</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6424243">
+                    <QCs/>
+                    <TotalDepth>1813</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6432423">
+                    <QCs/>
+                    <TotalDepth>506</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6482647">
+                    <QCs/>
+                    <TotalDepth>853</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6536667">
+                    <QCs/>
+                    <TotalDepth>507</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6565924">
+                    <QCs/>
+                    <TotalDepth>2983</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6671669">
+                    <QCs/>
+                    <TotalDepth>1259</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6678302">
+                    <QCs/>
+                    <TotalDepth>1697</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs689338">
+                    <QCs/>
+                    <TotalDepth>2192</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs6933870">
+                    <QCs/>
+                    <TotalDepth>1439</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs700702">
+                    <QCs/>
+                    <TotalDepth>793</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7137797">
+                    <QCs/>
+                    <TotalDepth>3075</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7159423">
+                    <QCs/>
+                    <TotalDepth>3653</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7160304">
+                    <QCs/>
+                    <TotalDepth>1726</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs716620">
+                    <QCs/>
+                    <TotalDepth>1451</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7297643">
+                    <QCs/>
+                    <TotalDepth>1824</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7329072">
+                    <QCs/>
+                    <TotalDepth>2552</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7441242">
+                    <QCs/>
+                    <TotalDepth>784</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7596380">
+                    <QCs/>
+                    <TotalDepth>713</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7703985">
+                    <QCs/>
+                    <TotalDepth>2431</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7710068">
+                    <QCs/>
+                    <TotalDepth>1886</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs774763">
+                    <QCs/>
+                    <TotalDepth>2045</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7767965">
+                    <QCs/>
+                    <TotalDepth>932</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7814747">
+                    <QCs/>
+                    <TotalDepth>723</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7857478">
+                    <QCs/>
+                    <TotalDepth>1881</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs790085">
+                    <QCs/>
+                    <TotalDepth>3136</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7945310">
+                    <QCs/>
+                    <TotalDepth>1183</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs7979370">
+                    <QCs/>
+                    <TotalDepth>883</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs8125857">
+                    <QCs/>
+                    <TotalDepth>2439</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs905457">
+                    <QCs/>
+                    <TotalDepth>425</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs909981">
+                    <QCs/>
+                    <TotalDepth>594</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs910792">
+                    <QCs/>
+                    <TotalDepth>600</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs918331">
+                    <QCs/>
+                    <TotalDepth>1075</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs926533">
+                    <QCs/>
+                    <TotalDepth>1933</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs9320609">
+                    <QCs/>
+                    <TotalDepth>2138</TotalDepth>
+                    <Genotypes>
+                        <Genotype>A</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs9352768">
+                    <QCs/>
+                    <TotalDepth>1254</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs944662">
+                    <QCs/>
+                    <TotalDepth>1415</TotalDepth>
+                    <Genotypes>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs9598152">
+                    <QCs/>
+                    <TotalDepth>1522</TotalDepth>
+                    <Genotypes>
+                        <Genotype>T</Genotype>
+                        <Genotype>C</Genotype>
+                    </Genotypes>
+                </isnp>
+                <isnp Locus="rs9613776">
+                    <QCs/>
+                    <TotalDepth>3236</TotalDepth>
+                    <Genotypes>
+                        <Genotype>G</Genotype>
+                        <Genotype>A</Genotype>
+                    </Genotypes>
+                </isnp>
+            </iSNP>
+        </locusInfomations>
+        <sites>
+            <strSites>
+                <site locus="DYS444" product_size="49">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="219.0">219.0</Reads>
+                    <RepeatSequence>TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT</RepeatSequence>
+                </site>
+                <site locus="D7S820" product_size="73">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="27.0" reverse="0.0">27.0</Reads>
+                    <RepeatSequence>ACGAACTAACGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGATTGATAGTTTTTTTTTA
+                    </RepeatSequence>
+                </site>
+                <site locus="D7S820" product_size="76">
+                    <Genotype>10.3</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="24.0" reverse="0.0">24.0</Reads>
+                    <RepeatSequence>ACGAACTAACGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGATTGATAGTTTTTTTTA
+                    </RepeatSequence>
+                </site>
+                <site locus="D7S820" product_size="77">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="598.0" reverse="0.0">598.0</Reads>
+                    <RepeatSequence>ACGAACTAACGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGATTGATAGTTTTTTTTTA
+                    </RepeatSequence>
+                </site>
+                <site locus="D7S820" product_size="77">
+                    <Genotype>11</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="16.0" reverse="0.0">16.0</Reads>
+                    <RepeatSequence>ACGAACTAACGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGATTGATAGTTTTGTTTTA
+                    </RepeatSequence>
+                </site>
+                <site locus="D7S820" product_size="77">
+                    <Genotype>11</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="11.0" reverse="0.0">11.0</Reads>
+                    <RepeatSequence>ACGAACTAACGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGATTGATAGTTTTATTTTA
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS522" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="29.0" reverse="0.0">29.0</Reads>
+                    <RepeatSequence>GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAG</RepeatSequence>
+                </site>
+                <site locus="DYS522" product_size="45">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="575.0" reverse="0.0">575.0</Reads>
+                    <RepeatSequence>GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAG</RepeatSequence>
+                </site>
+                <site locus="DYS643" product_size="65">
+                    <Genotype>9</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="17.0" reverse="0.0">17.0</Reads>
+                    <RepeatSequence>CTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTTCTTTCTTTTTAAAACTTTTT</RepeatSequence>
+                </site>
+                <site locus="DYS389I" product_size="62">
+                    <Genotype>11</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="13.0">13.0</Reads>
+                    <RepeatSequence>ATCTGTATTATCTATGTATCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTA</RepeatSequence>
+                </site>
+                <site locus="DYS389I" product_size="66">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="200.0">200.0</Reads>
+                    <RepeatSequence>ATCTGTATTATCTATGTATCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTA</RepeatSequence>
+                </site>
+                <site locus="DXS7133" product_size="37">
+                    <Genotype>8</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="18.0" reverse="0.0">18.0</Reads>
+                    <RepeatSequence>ATAGATAGATAGATAGATAGATAGATAGATAGATAAA</RepeatSequence>
+                </site>
+                <site locus="DXS7133" product_size="41">
+                    <Genotype>9</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="659.0" reverse="0.0">659.0</Reads>
+                    <RepeatSequence>ATAGATAGATAGATAGATAGATAGATAGATAGATAGATAAA</RepeatSequence>
+                </site>
+                <site locus="DYF404S1a/b" product_size="115">
+                    <Genotype>14</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="19.0">19.0</Reads>
+                    <RepeatSequence>
+                        TTTTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTCTCTTTCACTCTTTCTCTTTCTCTCTTTCTCTCTTTCTTCCTTTCTTTCTTTCTT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYF404S1a/b" product_size="119">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="396.0">396.0</Reads>
+                    <RepeatSequence>
+                        TTTTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTCTCTTTCACTCTTTCTCTTTCTCTCTTTCTCTCTTTCTTCCTTTCTTTCTTTCTT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS7132" product_size="53">
+                    <Genotype>13</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="26.0" reverse="0.0">26.0</Reads>
+                    <RepeatSequence>TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="DXS7132" product_size="57">
+                    <Genotype>14</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="204.0" reverse="0.0">204.0</Reads>
+                    <RepeatSequence>TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="D5S818" product_size="51">
+                    <Genotype>9</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="79.0" reverse="0.0">79.0</Reads>
+                    <RepeatSequence>ACGTAATATTTTGAAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="D5S818" product_size="55">
+                    <Genotype>10</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="2119.0" reverse="0.0">2119.0</Reads>
+                    <RepeatSequence>ACGTAATATTTTGAAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="D6S1043" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="29.0" reverse="0.0">29.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="D6S1043" product_size="45">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="497.0" reverse="0.0">497.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="D6S1043" product_size="73">
+                    <Genotype>18</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="12.0" reverse="0.0">12.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGATAGATAGATAGATAGATA
+                    </RepeatSequence>
+                </site>
+                <site locus="D6S1043" product_size="77">
+                    <Genotype>19</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="232.0" reverse="0.0">232.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATACATAGATAGATAGATAGATAGATA
+                    </RepeatSequence>
+                </site>
+                <site locus="GATA31E08" product_size="33">
+                    <Genotype>6</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="23.0">23.0</Reads>
+                    <RepeatSequence>AGGGAGGGAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="GATA31E08" product_size="37">
+                    <Genotype>7</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="619.0">619.0</Reads>
+                    <RepeatSequence>AGGGAGGGAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DYS448" product_size="174">
+                    <Genotype>22</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="63.0" reverse="0.0">63.0</Reads>
+                    <RepeatSequence>
+                        AGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATATAGAGATAGAGAGATAGAGATAGAGATAGATAGATAGAGAAAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGATAGAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="D2S1338" product_size="128">
+                    <Genotype>23</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="68.0" reverse="0.0">68.0</Reads>
+                    <RepeatSequence>
+                        TGCCTGCCTGCCTGCCTGCCTGCCTGCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCGTCCTTCCTTCCCTCCTGCAATCCTTTAACTTACTGAATAACTCATGA
+                    </RepeatSequence>
+                </site>
+                <site locus="D2S1338" product_size="132">
+                    <Genotype>24</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="814.0" reverse="0.0">814.0</Reads>
+                    <RepeatSequence>
+                        TGCCTGCCTGCCTGCCTGCCTGCCTGCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCGTCCTTCCTTCCCTCCTGCAATCCTTTAACTTACTGAATAACTCATGA
+                    </RepeatSequence>
+                </site>
+                <site locus="D2S1338" product_size="136">
+                    <Genotype>25</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="676.0" reverse="0.0">676.0</Reads>
+                    <RepeatSequence>
+                        TGCCTGCCTGCCTGCCTGCCTGCCTGCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCGTCCTTCCTTCCCTCCTGCAATCCTTTAACTTACTGAATAACTCATGA
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS10164" product_size="61">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="15.0">15.0</Reads>
+                    <RepeatSequence>TATTTCTTGCATTCTATTCTATTCTATTCTATTCTATTCTATTCTATTCTATTCTATTCTA</RepeatSequence>
+                </site>
+                <site locus="DXS10164" product_size="66">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="382.0">382.0</Reads>
+                    <RepeatSequence>TATTTCTTGCATTCTATTCTATTCTATTCTATTCTATTCTATTCTATTCTATTCTATTCTATTCTA</RepeatSequence>
+                </site>
+                <site locus="DYS645" product_size="41">
+                    <Genotype>8</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="631.0" reverse="0.0">631.0</Reads>
+                    <RepeatSequence>TGTTTTGTTTTGTTTTGTTTTGTTTTGTTTTGTTTTGTTTG</RepeatSequence>
+                </site>
+                <site locus="DYS722" product_size="51">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="146.0" reverse="0.0">146.0</Reads>
+                    <RepeatSequence>AACGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAA</RepeatSequence>
+                </site>
+                <site locus="DXS10162" product_size="71">
+                    <Genotype>17</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="28.0">28.0</Reads>
+                    <RepeatSequence>TCTTTTTCTTTCTTTCTTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS10162" product_size="75">
+                    <Genotype>18</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="552.0">552.0</Reads>
+                    <RepeatSequence>TCTTTTTCTTTCTTTCTTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTT
+                    </RepeatSequence>
+                </site>
+                <site locus="D12S391" product_size="57">
+                    <Genotype>14</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="14.0">14.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGATG</RepeatSequence>
+                </site>
+                <site locus="D12S391" product_size="57">
+                    <Genotype>14</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="10.0">10.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGATG</RepeatSequence>
+                </site>
+                <site locus="D12S391" product_size="61">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="312.0">312.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGATG</RepeatSequence>
+                </site>
+                <site locus="D12S391" product_size="73">
+                    <Genotype>18</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="153.0">153.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGACAGATG
+                    </RepeatSequence>
+                </site>
+                <site locus="D12S391" product_size="73">
+                    <Genotype>18</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="15.0">15.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGACAGACAGATG
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS389II" product_size="162">
+                    <Genotype>27</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="125.0">125.0</Reads>
+                    <RepeatSequence>
+                        TGTGTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCATTATACCTACTTCTGTATCCAACTCTCATCTGTATTATCTATGTATCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS481" product_size="69">
+                    <Genotype>22</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="12.0">12.0</Reads>
+                    <RepeatSequence>CTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTTTT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS481" product_size="72">
+                    <Genotype>23</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="59.0">59.0</Reads>
+                    <RepeatSequence>CTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTTTT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS481" product_size="75">
+                    <Genotype>24</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="352.0">352.0</Reads>
+                    <RepeatSequence>CTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTTTT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS481" product_size="78">
+                    <Genotype>25</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="14.0">14.0</Reads>
+                    <RepeatSequence>CTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTTTT
+                    </RepeatSequence>
+                </site>
+                <site locus="D2S441" product_size="132">
+                    <Genotype>8.1</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="13.0" reverse="0.0">13.0</Reads>
+                    <RepeatSequence>
+                        GAAACTGTGGCTCATCTATGAAAACTATCTATCTATCTATCTATCTATCTATCTATCTATATCATAACACCACAGCCACTTAGCTCCAATTTAAAAGATTAATCATAAACATTTGGGAAGGAGAGTGAAGCT
+                    </RepeatSequence>
+                </site>
+                <site locus="D2S441" product_size="136">
+                    <Genotype>9.1</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="616.0" reverse="0.0">616.0</Reads>
+                    <RepeatSequence>
+                        GAAACTGTGGCTCATCTATGAAAACTATCTATCTATCTATCTATCTATCTATCTATCTATCTATATCATAACACCACAGCCACTTAGCTCCAATTTAAAAGATTAATCATAAACATTTGGGAAGGAGAGTGAAGCT
+                    </RepeatSequence>
+                </site>
+                <site locus="D2S441" product_size="139">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="16.0" reverse="0.0">16.0</Reads>
+                    <RepeatSequence>
+                        GGAACTGTGGCTCATCTATGAAAACTTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATATCATAACACCACAGCCACTTAGCTCCAATTTAAAAGATTAATCATAAACATTTGGGAAGGAGAGTGAAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="D2S441" product_size="143">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="329.0" reverse="0.0">329.0</Reads>
+                    <RepeatSequence>
+                        GGAACTGTGGCTCATCTATGAAAACTTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATATCATAACACCACAGCCACTTAGCTCCAATTTAAAAGATTAATCATAAACATTTGGGAAGGAGAGTGAAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="Amelogenin" product_size="27">
+                    <Genotype>X</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1460.0" reverse="0.0">1460.0</Reads>
+                    <RepeatSequence>TGTTGATTCTTTATCCCAGATGTTTCT</RepeatSequence>
+                </site>
+                <site locus="Amelogenin" product_size="33">
+                    <Genotype>Y</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="890.0" reverse="0.0">890.0</Reads>
+                    <RepeatSequence>GGTGGATTCTTCATCCCAAATAAAGTGGTTTCT</RepeatSequence>
+                </site>
+                <site locus="Y-indel" product_size="10">
+                    <Genotype>Y</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1081.0">1081.0</Reads>
+                    <RepeatSequence>TTCTCTTCTC</RepeatSequence>
+                </site>
+                <site locus="DXS9902" product_size="48">
+                    <Genotype>9</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="37.0">37.0</Reads>
+                    <RepeatSequence>AAAAAAAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DXS9902" product_size="51">
+                    <Genotype>9.3</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="70.0">70.0</Reads>
+                    <RepeatSequence>AAAAAAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DXS9902" product_size="52">
+                    <Genotype>10</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1296.0">1296.0</Reads>
+                    <RepeatSequence>AAAAAAAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DXS9902" product_size="52">
+                    <Genotype>10</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="50.0">50.0</Reads>
+                    <RepeatSequence>AAAATAAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DXS9902" product_size="52">
+                    <Genotype>10</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="45.0">45.0</Reads>
+                    <RepeatSequence>AAAAGAAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DXS9902" product_size="52">
+                    <Genotype>10</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="32.0">32.0</Reads>
+                    <RepeatSequence>AAAACAAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DYS576" product_size="71">
+                    <Genotype>17</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="22.0" reverse="0.0">22.0</Reads>
+                    <RepeatSequence>AAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAA
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS576" product_size="75">
+                    <Genotype>18</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="317.0" reverse="0.0">317.0</Reads>
+                    <RepeatSequence>AAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAA
+                    </RepeatSequence>
+                </site>
+                <site locus="D4S2408" product_size="37">
+                    <Genotype>9</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="75.0">75.0</Reads>
+                    <RepeatSequence>ATCTATCTATCTATCTATCTATCTATCTATCTATCTA</RepeatSequence>
+                </site>
+                <site locus="D4S2408" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2452.0">2452.0</Reads>
+                    <RepeatSequence>ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA</RepeatSequence>
+                </site>
+                <site locus="FGA" product_size="118">
+                    <Genotype>25</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="127.0">127.0</Reads>
+                    <RepeatSequence>
+                        TTTCTTTCTTTCTTTTTTCTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTCCTTCCTTCCTTTCTTCCTTTCTTTTTT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS456" product_size="61">
+                    <Genotype>15</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="126.0" reverse="0.0">126.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DYS456" product_size="65">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1697.0" reverse="0.0">1697.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DYS533" product_size="45">
+                    <Genotype>11</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="10.0">10.0</Reads>
+                    <RepeatSequence>ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA</RepeatSequence>
+                </site>
+                <site locus="DYS533" product_size="49">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="161.0">161.0</Reads>
+                    <RepeatSequence>ATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA</RepeatSequence>
+                </site>
+                <site locus="DXS8378" product_size="58">
+                    <Genotype>10</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="169.0">169.0</Reads>
+                    <RepeatSequence>CTATCTATCTATCTATCTATCTATCTATCTATCTATCTATATTTTATTTATTTATTTT</RepeatSequence>
+                </site>
+                <site locus="DYS570" product_size="64">
+                    <Genotype>15</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="34.0">34.0</Reads>
+                    <RepeatSequence>TTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTT</RepeatSequence>
+                </site>
+                <site locus="DYS570" product_size="68">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="603.0">603.0</Reads>
+                    <RepeatSequence>TTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTT
+                    </RepeatSequence>
+                </site>
+                <site locus="D17S1301" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="12.0" reverse="0.0">12.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATC</RepeatSequence>
+                </site>
+                <site locus="D17S1301" product_size="45">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="299.0" reverse="0.0">299.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATC</RepeatSequence>
+                </site>
+                <site locus="D17S1301" product_size="49">
+                    <Genotype>12</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="24.0" reverse="0.0">24.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATC</RepeatSequence>
+                </site>
+                <site locus="D17S1301" product_size="53">
+                    <Genotype>13</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="256.0" reverse="0.0">256.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATC</RepeatSequence>
+                </site>
+                <site locus="DYS458" product_size="65">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="93.0">93.0</Reads>
+                    <RepeatSequence>GAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAG</RepeatSequence>
+                </site>
+                <site locus="DYS612" product_size="103">
+                    <Genotype>34</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="34.0">34.0</Reads>
+                    <RepeatSequence>
+                        CCTCCTCCTCCTCCTCTTTCTTCTTCTTTTCCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTG
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS612" product_size="106">
+                    <Genotype>35</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="217.0">217.0</Reads>
+                    <RepeatSequence>
+                        CCTCCTCCTCCTCCTCTTTCTTCTTCTTTTCCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTG
+                    </RepeatSequence>
+                </site>
+                <site locus="D21S11" product_size="123">
+                    <Genotype>28</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="10.0" reverse="0.0">10.0</Reads>
+                    <RepeatSequence>
+                        TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="D21S11" product_size="127">
+                    <Genotype>29</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="153.0" reverse="0.0">153.0</Reads>
+                    <RepeatSequence>
+                        TCTATCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="D21S11" product_size="131">
+                    <Genotype>30</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="88.0" reverse="0.0">88.0</Reads>
+                    <RepeatSequence>
+                        TCTATCTATCTATCTATCTATCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATATCTATCTATCTATCATCTATCTATCCATATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="D18S51" product_size="67">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="110.0" reverse="0.0">110.0</Reads>
+                    <RepeatSequence>AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAA</RepeatSequence>
+                </site>
+                <site locus="D18S51" product_size="71">
+                    <Genotype>17</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="103.0" reverse="0.0">103.0</Reads>
+                    <RepeatSequence>AGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAAA
+                    </RepeatSequence>
+                </site>
+                <site locus="D20S482" product_size="71">
+                    <Genotype>13</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="29.0">29.0</Reads>
+                    <RepeatSequence>CCGAACCAATAAGAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="D20S482" product_size="75">
+                    <Genotype>14</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="344.0">344.0</Reads>
+                    <RepeatSequence>CCGAACCAATAAGAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="D20S482" product_size="79">
+                    <Genotype>15</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="29.0">29.0</Reads>
+                    <RepeatSequence>CCGAACCAATAAGAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="D20S482" product_size="83">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="261.0">261.0</Reads>
+                    <RepeatSequence>
+                        CCGAACCAATAAGAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS6789" product_size="77">
+                    <Genotype>19</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="33.0" reverse="0.0">33.0</Reads>
+                    <RepeatSequence>TTATCTATGTATGTATGTATGTATGTATGTATGTATGTATGTATGTATCTATCTATCTATCTATCTATCTATCTATC
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS6789" product_size="77">
+                    <Genotype>19</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="33.0" reverse="0.0">33.0</Reads>
+                    <RepeatSequence>TTATCTATGTATGTATGTATGTATGTATGTATGTATGTATGTATCTATCTATCTATCTATCTATCTATCTATCTATC
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS6789" product_size="81">
+                    <Genotype>20</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="777.0" reverse="0.0">777.0</Reads>
+                    <RepeatSequence>TTATCTATGTATGTATGTATGTATGTATGTATGTATGTATGTATGTATCTATCTATCTATCTATCTATCTATCTATCTATC
+                    </RepeatSequence>
+                </site>
+                <site locus="D8S1179" product_size="53">
+                    <Genotype>13</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="44.0" reverse="0.0">44.0</Reads>
+                    <RepeatSequence>TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="D8S1179" product_size="57">
+                    <Genotype>14</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="468.0" reverse="0.0">468.0</Reads>
+                    <RepeatSequence>TCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="D8S1179" product_size="57">
+                    <Genotype>14</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="28.0" reverse="0.0">28.0</Reads>
+                    <RepeatSequence>TCTATCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="D8S1179" product_size="61">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="382.0" reverse="0.0">382.0</Reads>
+                    <RepeatSequence>TCTATCTATCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="vWA" product_size="159">
+                    <Genotype>15</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="53.0">53.0</Reads>
+                    <RepeatSequence>
+                        AAGAAACAGGTCTAGAGGATCCAAGTTGACTTGGCTGAGATGTGAAAGCCCTAGTGGATGATAAGAATAATCAGTATGTGACTTGGATTGATCTATCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCCATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="vWA" product_size="163">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="557.0">557.0</Reads>
+                    <RepeatSequence>
+                        AAGAAACAGGTCTAGAGGATCCAAGTTGACTTGGCTGAGATGTGAAAGCCCTAGTGGATGATAAGAATAATCAGTATGTGACTTGGATTGATCTATCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCCATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="vWA" product_size="171">
+                    <Genotype>18</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="36.0">36.0</Reads>
+                    <RepeatSequence>
+                        AAGAAACAGGTCTAGAGGATCCAAGTTGACTTGGCTGAGATGTGAAAGCCCTAGTGGATGATAAGAATAATCAGTATGTGACTTGGATTGATCTATCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCCATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="vWA" product_size="175">
+                    <Genotype>19</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="447.0">447.0</Reads>
+                    <RepeatSequence>
+                        AAGAAACAGGTCTAGAGGATCCAAGTTGACTTGGCTGAGATGTGAAAGCCCTAGTGGATGATAAGAATAATCAGTATGTGACTTGGATTGATCTATCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCCATCTA
+                    </RepeatSequence>
+                </site>
+                <site locus="TPOX" product_size="29">
+                    <Genotype>7</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="36.0">36.0</Reads>
+                    <RepeatSequence>AATGAATGAATGAATGAATGAATGAATGT</RepeatSequence>
+                </site>
+                <site locus="TPOX" product_size="33">
+                    <Genotype>8</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1816.0">1816.0</Reads>
+                    <RepeatSequence>AATGAATGAATGAATGAATGAATGAATGAATGT</RepeatSequence>
+                </site>
+                <site locus="D19S433" product_size="56">
+                    <Genotype>12</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="44.0" reverse="0.0">44.0</Reads>
+                    <RepeatSequence>AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG</RepeatSequence>
+                </site>
+                <site locus="D19S433" product_size="58">
+                    <Genotype>12.2</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="60.0" reverse="0.0">60.0</Reads>
+                    <RepeatSequence>AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG</RepeatSequence>
+                </site>
+                <site locus="D19S433" product_size="60">
+                    <Genotype>13</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="918.0" reverse="0.0">918.0</Reads>
+                    <RepeatSequence>AAGGAAAGAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG</RepeatSequence>
+                </site>
+                <site locus="D19S433" product_size="62">
+                    <Genotype>13.2</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="931.0" reverse="0.0">931.0</Reads>
+                    <RepeatSequence>AAGGAAAAGGTAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGG</RepeatSequence>
+                </site>
+                <site locus="DYS388" product_size="34">
+                    <Genotype>11</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="15.0" reverse="0.0">15.0</Reads>
+                    <RepeatSequence>AATAATAATAATAATAATAATAATAATAATAATG</RepeatSequence>
+                </site>
+                <site locus="DYS388" product_size="37">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="210.0" reverse="0.0">210.0</Reads>
+                    <RepeatSequence>AATAATAATAATAATAATAATAATAATAATAATAATG</RepeatSequence>
+                </site>
+                <site locus="DYS460" product_size="37">
+                    <Genotype>9</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="15.0" reverse="0.0">15.0</Reads>
+                    <RepeatSequence>ATAGATAGATAGATAGATAGATAGATAGATAGATAGA</RepeatSequence>
+                </site>
+                <site locus="DYS460" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="375.0" reverse="0.0">375.0</Reads>
+                    <RepeatSequence>ATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA</RepeatSequence>
+                </site>
+                <site locus="D10S1248" product_size="51">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="69.0">69.0</Reads>
+                    <RepeatSequence>GTGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAA</RepeatSequence>
+                </site>
+                <site locus="D10S1248" product_size="63">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="66.0">66.0</Reads>
+                    <RepeatSequence>GTGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAA</RepeatSequence>
+                </site>
+                <site locus="DXS10103" product_size="65">
+                    <Genotype>15</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="36.0">36.0</Reads>
+                    <RepeatSequence>TAGATAGACTGACAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGATAGAT</RepeatSequence>
+                </site>
+                <site locus="DXS10103" product_size="69">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="852.0">852.0</Reads>
+                    <RepeatSequence>TAGATAGACTGACAGATAGATAGATAGATAGATAGATAGATAGATAGACAGACAGACAGACAGATAGAT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS508" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="276.0">276.0</Reads>
+                    <RepeatSequence>TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCA</RepeatSequence>
+                </site>
+                <site locus="D9S1122" product_size="49">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="17.0">17.0</Reads>
+                    <RepeatSequence>TAGATAGGTAGATCGATAGATAGATAGATAGATAGATAGATAGATAGAT</RepeatSequence>
+                </site>
+                <site locus="D9S1122" product_size="53">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="395.0">395.0</Reads>
+                    <RepeatSequence>TAGATAGGTAGATCGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT</RepeatSequence>
+                </site>
+                <site locus="D9S1122" product_size="57">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="358.0">358.0</Reads>
+                    <RepeatSequence>TAGATAGGTAGATCGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT</RepeatSequence>
+                </site>
+                <site locus="DYS505" product_size="63">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="12.0">12.0</Reads>
+                    <RepeatSequence>TCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCTTTCCCTCCTTCTTTCTCTTT</RepeatSequence>
+                </site>
+                <site locus="DYS505" product_size="67">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="288.0">288.0</Reads>
+                    <RepeatSequence>TCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCCTTCTTTCCCTCCTTCTTTCTCTTT</RepeatSequence>
+                </site>
+                <site locus="DYS549" product_size="53">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="39.0">39.0</Reads>
+                    <RepeatSequence>GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAAAA</RepeatSequence>
+                </site>
+                <site locus="DYS627" product_size="89">
+                    <Genotype>22</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="15.0" reverse="0.0">15.0</Reads>
+                    <RepeatSequence>
+                        AGAGAGAGAGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGA
+                    </RepeatSequence>
+                </site>
+                <site locus="TH01" product_size="25">
+                    <Genotype>6</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="37.0">37.0</Reads>
+                    <RepeatSequence>AATGAATGAATGAATGAATGAATGA</RepeatSequence>
+                </site>
+                <site locus="TH01" product_size="29">
+                    <Genotype>7</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="740.0">740.0</Reads>
+                    <RepeatSequence>AATGAATGAATGAATGAATGAATGAATGA</RepeatSequence>
+                </site>
+                <site locus="TH01" product_size="33">
+                    <Genotype>8</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="35.0">35.0</Reads>
+                    <RepeatSequence>AATGAATGAATGAATGAATGAATGAATGAATGA</RepeatSequence>
+                </site>
+                <site locus="TH01" product_size="37">
+                    <Genotype>9</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="620.0">620.0</Reads>
+                    <RepeatSequence>AATGAATGAATGAATGAATGAATGAATGAATGAATGA</RepeatSequence>
+                </site>
+                <site locus="SRY" product_size="93">
+                    <Genotype>Y</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="989.0" reverse="0.0">989.0</Reads>
+                    <RepeatSequence>
+                        GCACTTCGCTGCAGAGTACCGAAGCGGGATCTGCGGGAAGCAAACTGCAATTCTTCGGCAGCATCTTCGCCTTCCGACGAGGTCGATACTTAT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS101" product_size="76">
+                    <Genotype>24</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="19.0">19.0</Reads>
+                    <RepeatSequence>TTTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTATTATTATTATTATTATTATT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS101" product_size="76">
+                    <Genotype>24</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="12.0">12.0</Reads>
+                    <RepeatSequence>TTTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTATTATTATTATTATTATT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS101" product_size="79">
+                    <Genotype>25</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="288.0">288.0</Reads>
+                    <RepeatSequence>TTTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTATTATTATTATTATTATTATT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS101" product_size="79">
+                    <Genotype>25</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="16.0">16.0</Reads>
+                    <RepeatSequence>TTTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTATTATTATTATTATTATTATTATT
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS981" product_size="57">
+                    <Genotype>14</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="110.0">110.0</Reads>
+                    <RepeatSequence>TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT</RepeatSequence>
+                </site>
+                <site locus="CSF1PO" product_size="53">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="46.0">46.0</Reads>
+                    <RepeatSequence>AGATAGATAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT</RepeatSequence>
+                </site>
+                <site locus="CSF1PO" product_size="57">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1071.0">1071.0</Reads>
+                    <RepeatSequence>AGATAGATAGATTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAT</RepeatSequence>
+                </site>
+                <site locus="Y-GATA-H4" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="15.0">15.0</Reads>
+                    <RepeatSequence>TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAA</RepeatSequence>
+                </site>
+                <site locus="Y-GATA-H4" product_size="45">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="257.0">257.0</Reads>
+                    <RepeatSequence>TAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGAA</RepeatSequence>
+                </site>
+                <site locus="D3S1358" product_size="61">
+                    <Genotype>15</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="177.0">177.0</Reads>
+                    <RepeatSequence>TCTATCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="D3S1358" product_size="65">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2899.0">2899.0</Reads>
+                    <RepeatSequence>TCTATCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="DXS7423" product_size="64">
+                    <Genotype>14</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="17.0" reverse="0.0">17.0</Reads>
+                    <RepeatSequence>TCCATCCATCCATCTGTCCTTCCATCCATCCATCCATCCATCCATCCATCCATCCATCCATCCA</RepeatSequence>
+                </site>
+                <site locus="DXS7423" product_size="68">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="426.0" reverse="0.0">426.0</Reads>
+                    <RepeatSequence>TCCATCCATCCATCTGTCCTTCCATCCATCCATCCATCCATCCATCCATCCATCCATCCATCCATCCA
+                    </RepeatSequence>
+                </site>
+                <site locus="D1S1656" product_size="73">
+                    <Genotype>14</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="16.0" reverse="0.0">16.0</Reads>
+                    <RepeatSequence>TGTGATGTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGGTGTGTGTGTG
+                    </RepeatSequence>
+                </site>
+                <site locus="D1S1656" product_size="77">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="53.0" reverse="0.0">53.0</Reads>
+                    <RepeatSequence>TGTGATGTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGGTGTGTGTGTG
+                    </RepeatSequence>
+                </site>
+                <site locus="D1S1656" product_size="81">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="48.0" reverse="0.0">48.0</Reads>
+                    <RepeatSequence>TGTGATGTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGGTGTGTGTGTG
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS19" product_size="64">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="67.0" reverse="0.0">67.0</Reads>
+                    <RepeatSequence>TAGATAGATAGATAGGTAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA</RepeatSequence>
+                </site>
+                <site locus="DYS596" product_size="91">
+                    <Genotype>15</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="231.0">231.0</Reads>
+                    <RepeatSequence>
+                        GGGAGGAGGAGGAGGAGTAGGAGGAGGAGAAGAAGAAGGAGAAGGAGAAGGAGAAGGAGAAGGAGAAGGAGAAGGAGAAGGAGAAGGAGAA
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS7424" product_size="52">
+                    <Genotype>15</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="22.0">22.0</Reads>
+                    <RepeatSequence>TAATAATAATAATAATAATAATAATAATAATAATAATAATAATAATGTGCGG</RepeatSequence>
+                </site>
+                <site locus="DXS7424" product_size="55">
+                    <Genotype>16</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="112.0">112.0</Reads>
+                    <RepeatSequence>TAATAATAATAATAATAATAATAATAATAATAATAATAATAATAATAATGTGCGG</RepeatSequence>
+                </site>
+                <site locus="D10S1435" product_size="66">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="23.0">23.0</Reads>
+                    <RepeatSequence>ATAATGCATTGAGTTTTATTCTGTTTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT</RepeatSequence>
+                </site>
+                <site locus="D10S1435" product_size="70">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="611.0">611.0</Reads>
+                    <RepeatSequence>ATAATGCATTGAGTTTTATTCTGTTTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT
+                    </RepeatSequence>
+                </site>
+                <site locus="D10S1435" product_size="74">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="496.0">496.0</Reads>
+                    <RepeatSequence>ATAATGCATTGAGTTTTATTCTGTTTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS593" product_size="86">
+                    <Genotype>17</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="207.0" reverse="0.0">207.0</Reads>
+                    <RepeatSequence>
+                        AAAACAAAACAAAATAAAACAAAACAAAACAAAACAAAATAAAATAAAATAAAATAAAATAAAATAAAATAAAATAAAATAAAATA
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS10159" product_size="98">
+                    <Genotype>24</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="141.0" reverse="0.0">141.0</Reads>
+                    <RepeatSequence>
+                        AAAGAAAGAAAGAAAGAGAAAGAAAGAGAAAGAAAGAAAGAAAGAAAGAAAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAG
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS518" product_size="159">
+                    <Genotype>38</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="20.0" reverse="0.0">20.0</Reads>
+                    <RepeatSequence>
+                        AAAGAAAGAAAGGAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGGGAGAAAGAAAGAAAGAAAGGAAGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGG
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS439" product_size="45">
+                    <Genotype>11</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="22.0">22.0</Reads>
+                    <RepeatSequence>GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAG</RepeatSequence>
+                </site>
+                <site locus="DYS439" product_size="49">
+                    <Genotype>12</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="450.0">450.0</Reads>
+                    <RepeatSequence>GATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAG</RepeatSequence>
+                </site>
+                <site locus="DXS10079" product_size="104">
+                    <Genotype>20</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="11.0" reverse="0.0">11.0</Reads>
+                    <RepeatSequence>
+                        AAAAAGAGAGAGAGAGTGAAAGAGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAGAAAGAAAGAA
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS10079" product_size="108">
+                    <Genotype>21</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="170.0" reverse="0.0">170.0</Reads>
+                    <RepeatSequence>
+                        AAAAAGAGAGAGAGAGTGAAAGAGAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAGAAAGAAAGAA
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS437" product_size="53">
+                    <Genotype>13</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="12.0">12.0</Reads>
+                    <RepeatSequence>TCTATCTATCTATCTATCTATCTATCTATCTGTCTGTCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="DYS437" product_size="57">
+                    <Genotype>14</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="418.0">418.0</Reads>
+                    <RepeatSequence>TCTATCTATCTATCTATCTATCTATCTATCTATCTGTCTGTCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="DYS635" product_size="85">
+                    <Genotype>21</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="423.0" reverse="0.0">423.0</Reads>
+                    <RepeatSequence>
+                        TCTATCTATCTATCTATGTATGTATCTATCTATGTATGTATCTATCTATGTATGTATCTATCTATCTATCTATCTATCTATCTAT
+                    </RepeatSequence>
+                </site>
+                <site locus="D22S1045" product_size="34">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="91.0" reverse="0.0">91.0</Reads>
+                    <RepeatSequence>ATTATTATTATTATTATTATTATTACTATTATTG</RepeatSequence>
+                </site>
+                <site locus="D22S1045" product_size="52">
+                    <Genotype>17</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="29.0" reverse="0.0">29.0</Reads>
+                    <RepeatSequence>ATTATTATTATTATTATTATTATTATTATTATTATTATTATTACTATTATTG</RepeatSequence>
+                </site>
+                <site locus="DXS10075" product_size="103">
+                    <Genotype>19</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="11.0">11.0</Reads>
+                    <RepeatSequence>
+                        GATATTGCAGAGAAGAATCATATCTAGATAGATAGATAGATAGATGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS10075" product_size="107">
+                    <Genotype>20</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="183.0">183.0</Reads>
+                    <RepeatSequence>
+                        GATATTGCAGAGAAGAATCATATCTAGATAGATAGATAGATAGATGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGA
+                    </RepeatSequence>
+                </site>
+                <site locus="DYF387S1a/b" product_size="195">
+                    <Genotype>38</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="70.0" reverse="0.0">70.0</Reads>
+                    <RepeatSequence>
+                        AAGAAAAAAAGAAGAAGAAGAAAGAGAAAAAAAGAAAGAAAGGTAGGAAGGAAGGAAGGAAGAAAGAAAGGAAGAAAGAAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGGAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAATAAAAAAAA
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS557" product_size="108">
+                    <Genotype>17</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="45.0">45.0</Reads>
+                    <RepeatSequence>
+                        TTTCTTTCTTTCTTTCTTCTCTTTCTTTCTTTCTTTCTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTCTTTC
+                    </RepeatSequence>
+                </site>
+                <site locus="DXS10074" product_size="98">
+                    <Genotype>17</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="33.0">33.0</Reads>
+                    <RepeatSequence>
+                        AGAGAGAGAGAGAGAGAAAAAGAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGGAAGAAAGAAAGGAAGA
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS385a/b" product_size="169">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="17.0" reverse="0.0">17.0</Reads>
+                    <RepeatSequence>
+                        AAGGAAGGAAGGAAGGAGAAAGAAAGTAAAAAAGAAAGAAAGAGAAAAAGAGAAAAAGAAAGAAAGAGAAGAAAGAGAAAGAGGAAAGAGAAAGAAAGGAAGGAAGGAAGGAAGGAAGGGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAGAAA
+                    </RepeatSequence>
+                </site>
+                <site locus="D16S539" product_size="153">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="13.0">13.0</Reads>
+                    <RepeatSequence>
+                        CAGAAAACCACAGTTCCCATTTTTATATGGGAGCAAACAAAGGCAGATCCCAAGCTCTTCCTCTTCCCTAGATCAATACAGACAGACAGACAGGTGGATAGATAGATAGATAGATAGATAGATAGATAGATAGATATCATTGAAAGACAAAAC
+                    </RepeatSequence>
+                </site>
+                <site locus="D16S539" product_size="157">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="181.0">181.0</Reads>
+                    <RepeatSequence>
+                        CAGAAAACCACAGTTCCCATTTTTATATGGGAGCAAACAAAGGCAGATCCCAAGCTCTTCCTCTTCCCTAGATCAATACAGACAGACAGACAGGTGGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATATCATTGAAAGACAAAAC
+                    </RepeatSequence>
+                </site>
+                <site locus="D16S539" product_size="161">
+                    <Genotype>12</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="11.0">11.0</Reads>
+                    <RepeatSequence>
+                        CAGAAAACCACAGTTCCCATTTTTATATGGGAGCAAACAAAGGCAGATCCCAAGCTCTTCCTCTTCCCTAGATCAATACAGACAGACAGACAGGTGGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATATCATTGAAAGACAAAAC
+                    </RepeatSequence>
+                </site>
+                <site locus="D16S539" product_size="165">
+                    <Genotype>13</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="121.0">121.0</Reads>
+                    <RepeatSequence>
+                        CAGAAAACCACAGTTCCCATTTTTATATGGGAGCAAACAAAGGCAGATCCCAAGCTCTTCCTCTTCCCTAGATCAATACAGACAGACAGACAGGTGGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATATCATTGAAAGACAAAAC
+                    </RepeatSequence>
+                </site>
+                <site locus="D13S317" product_size="41">
+                    <Genotype>8</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="23.0">23.0</Reads>
+                    <RepeatSequence>TATCTATCTATCTATCTATCTATCTATCTATCAATCAATCA</RepeatSequence>
+                </site>
+                <site locus="D13S317" product_size="45">
+                    <Genotype>9</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1268.0">1268.0</Reads>
+                    <RepeatSequence>TATCTATCTATCTATCTATCTATCTATCTATCTATCAATCAATCA</RepeatSequence>
+                </site>
+                <site locus="D13S317" product_size="49">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="52.0">52.0</Reads>
+                    <RepeatSequence>TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCAATCA</RepeatSequence>
+                </site>
+                <site locus="D13S317" product_size="53">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="982.0">982.0</Reads>
+                    <RepeatSequence>TATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCAATCA</RepeatSequence>
+                </site>
+                <site locus="DXS6809" product_size="170">
+                    <Genotype>35</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="111.0">111.0</Reads>
+                    <RepeatSequence>
+                        CTATCTATCTATCTATCTATCTATCTATCTATCTATCTATATCTATCTATCTATCATCTATTATCTATCTATCATCTATCTATCTATCTATCTATTATCTATCATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCCTCTATCT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS392" product_size="31">
+                    <Genotype>10</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="13.0">13.0</Reads>
+                    <RepeatSequence>TATTATTATTATTATTATTATTATTATTATT</RepeatSequence>
+                </site>
+                <site locus="DYS392" product_size="34">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="226.0">226.0</Reads>
+                    <RepeatSequence>TATTATTATTATTATTATTATTATTATTATTATT</RepeatSequence>
+                </site>
+                <site locus="DYS393" product_size="49">
+                    <Genotype>12</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="24.0">24.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DYS393" product_size="53">
+                    <Genotype>13</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="206.0">206.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+                <site locus="DYS393" product_size="65">
+                    <Genotype>16</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="14.0">14.0</Reads>
+                    <RepeatSequence>ATATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGACAGATA</RepeatSequence>
+                </site>
+                <site locus="DYS390" product_size="89">
+                    <Genotype>22</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="32.0">32.0</Reads>
+                    <RepeatSequence>
+                        TCTGTCTGTCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTGTCTATCTATCTATCTAT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS390" product_size="93">
+                    <Genotype>23</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="561.0">561.0</Reads>
+                    <RepeatSequence>
+                        TCTGTCTGTCTGTCTGTCTGTCTGTCTGTCTGTCTATCTATCTATCTATCTATCTATCTATCTATCTATCTATCTGTCTATCTATCTATCTAT
+                    </RepeatSequence>
+                </site>
+                <site locus="DYS391" product_size="37">
+                    <Genotype>9</Genotype>
+                    <Typed>stutter</Typed>
+                    <Reads forward="0.0" reverse="62.0">62.0</Reads>
+                    <RepeatSequence>TCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="DYS391" product_size="41">
+                    <Genotype>10</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="979.0">979.0</Reads>
+                    <RepeatSequence>TCTATCTATCTATCTATCTATCTATCTATCTATCTATCTAT</RepeatSequence>
+                </site>
+                <site locus="GATA165B12" product_size="45">
+                    <Genotype>11</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="124.0">124.0</Reads>
+                    <RepeatSequence>AGATAGATAGATAGATAGATAGATAGATAGATAGATAGATAGATA</RepeatSequence>
+                </site>
+            </strSites>
+            <snpSites>
+                <site locus="rs716620" product_size="226">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1442.0">1442.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs716620" product_size="225">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="8.0">8.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs716620" product_size="226">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11779762" product_size="216">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="479.0">479.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11779762" product_size="216">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="291.0">291.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11779762" product_size="216">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2453236" product_size="217">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="361.0">361.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2453236" product_size="217">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="349.0">349.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4813947" product_size="216">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="707.0">707.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4813947" product_size="216">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="5.0">5.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10100663" product_size="230">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1047.0">1047.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10100663" product_size="230">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="989.0">989.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10100663" product_size="230">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs17137114" product_size="218">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="280.0">280.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs17137114" product_size="218">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="248.0">248.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13255815" product_size="220">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1298.0">1298.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13255815" product_size="220">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="5.0">5.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13255815" product_size="220">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7767965" product_size="215">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="489.0">489.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7767965" product_size="215">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="443.0">443.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1863370" product_size="234">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1234.0" reverse="0.0">1234.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1863370" product_size="234">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1115.0" reverse="0.0">1115.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1898230" product_size="226">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="2880.0" reverse="0.0">2880.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1898230" product_size="226">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="3.0" reverse="0.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1898230" product_size="226">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="3.0" reverse="0.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1898230" product_size="226">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="1.0" reverse="0.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs507226" product_size="222">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="2764.0" reverse="0.0">2764.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs507226" product_size="222">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="4.0" reverse="0.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4075260" product_size="220">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="523.0">523.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4075260" product_size="220">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="478.0">478.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4709032" product_size="221">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="939.0">939.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4709032" product_size="221">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="773.0">773.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13554" product_size="215">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="266.0">266.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13554" product_size="215">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="234.0">234.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13554" product_size="215">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13554" product_size="215">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1000551" product_size="243">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1798.0">1798.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1000551" product_size="243">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="3.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4235308" product_size="215">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="426.0">426.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4235308" product_size="215">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="351.0">351.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4235308" product_size="215">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7814747" product_size="224">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="398.0">398.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7814747" product_size="224">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="325.0">325.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1054975" product_size="222">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="606.0">606.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1054975" product_size="222">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7137797" product_size="225">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="3070.0" reverse="0.0">3070.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7137797" product_size="225">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="5.0" reverse="0.0">5.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs905457" product_size="214">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="424.0">424.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs905457" product_size="214">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6933870" product_size="219">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1435.0">1435.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6933870" product_size="219">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs944662" product_size="215">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1413.0">1413.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs944662" product_size="215">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4512160" product_size="217">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="508.0">508.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4512160" product_size="217">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="458.0">458.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4512160" product_size="217">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13113625" product_size="223">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="487.0">487.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13113625" product_size="223">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="469.0">469.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7857478" product_size="221">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1878.0">1878.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7857478" product_size="221">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7857478" product_size="221">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10501269" product_size="227">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1256.0">1256.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10501269" product_size="227">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="19.0">19.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1381964" product_size="215">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1026.0" reverse="0.0">1026.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7945310" product_size="224">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1168.0">1168.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7945310" product_size="224">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="15.0">15.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6106298" product_size="228">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2960.0">2960.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6106298" product_size="228">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="3.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6106298" product_size="228">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9320609" product_size="227">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1081.0">1081.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9320609" product_size="227">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1050.0">1050.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9320609" product_size="227">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9320609" product_size="227">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="3.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9613776" product_size="227">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1691.0">1691.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9613776" product_size="227">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1517.0">1517.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9613776" product_size="227">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="21.0">21.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9613776" product_size="227">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="7.0">7.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2285914" product_size="218">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="332.0">332.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2285914" product_size="218">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="290.0">290.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7160304" product_size="227">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1721.0" reverse="0.0">1721.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7160304" product_size="227">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="4.0" reverse="0.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7160304" product_size="227">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="1.0" reverse="0.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs910792" product_size="230">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="313.0">313.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs910792" product_size="230">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="287.0">287.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6671669" product_size="216">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1258.0">1258.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6671669" product_size="216">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs689338" product_size="222">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1099.0">1099.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs689338" product_size="222">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1091.0">1091.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs689338" product_size="222">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs774763" product_size="224">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1075.0">1075.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs774763" product_size="224">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="970.0">970.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12042109" product_size="221">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="856.0">856.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12042109" product_size="221">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="794.0">794.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1206523" product_size="228">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="893.0">893.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1206523" product_size="228">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="845.0">845.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7979370" product_size="220">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="880.0">880.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7979370" product_size="220">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7979370" product_size="220">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12605006" product_size="220">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1929.0">1929.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12605006" product_size="220">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs451826" product_size="218">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="952.0">952.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs451826" product_size="218">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7297643" product_size="229">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="959.0" reverse="0.0">959.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7297643" product_size="229">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="863.0" reverse="0.0">863.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7297643" product_size="229">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="2.0" reverse="0.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7329072" product_size="229">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1353.0" reverse="0.0">1353.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7329072" product_size="229">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1198.0" reverse="0.0">1198.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7329072" product_size="229">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="1.0" reverse="0.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10490978" product_size="215">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="663.0" reverse="0.0">663.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10490978" product_size="215">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="3.0" reverse="0.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4868851" product_size="222">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="879.0">879.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4868851" product_size="222">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="3.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4868851" product_size="222">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4868851" product_size="222">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs700702" product_size="229">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="404.0">404.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs700702" product_size="229">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="389.0">389.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7596380" product_size="213">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="389.0">389.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7596380" product_size="213">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="324.0">324.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7703985" product_size="198">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="2422.0" reverse="0.0">2422.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7703985" product_size="197">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="9.0" reverse="0.0">9.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2837768" product_size="219">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="969.0" reverse="0.0">969.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1024676" product_size="219">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="839.0" reverse="0.0">839.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9598152" product_size="221">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="778.0">778.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9598152" product_size="221">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="743.0">743.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9598152" product_size="221">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6432423" product_size="218">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="266.0">266.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6432423" product_size="218">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="240.0">240.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11174191" product_size="235">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="850.0">850.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11174191" product_size="235">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="836.0">836.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11174191" product_size="235">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs909981" product_size="222">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="593.0">593.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs909981" product_size="222">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7710068" product_size="219">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1882.0">1882.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7710068" product_size="219">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs8125857" product_size="221">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1261.0">1261.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs8125857" product_size="221">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1178.0">1178.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4801083" product_size="222">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="688.0">688.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4801083" product_size="222">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="668.0">668.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10474433" product_size="224">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2300.0">2300.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10474433" product_size="224">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="7.0">7.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10474433" product_size="224">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6424243" product_size="220">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1813.0">1813.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4878020" product_size="224">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="349.0">349.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4878020" product_size="224">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="292.0">292.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11714258" product_size="223">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2826.0">2826.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11714258" product_size="223">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="7.0">7.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2122080" product_size="218">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="517.0">517.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2122080" product_size="218">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="508.0">508.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2122080" product_size="218">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs790085" product_size="217">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="3124.0">3124.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs790085" product_size="217">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="11.0">11.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs790085" product_size="217">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs926533" product_size="194">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1086.0">1086.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs926533" product_size="194">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="847.0">847.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2188471" product_size="225">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="989.0">989.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2188471" product_size="225">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="959.0">959.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs238925" product_size="177">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2417.0">2417.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs238925" product_size="177">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs238925" product_size="177">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs238925" product_size="177">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6678302" product_size="225">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="864.0" reverse="0.0">864.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6678302" product_size="225">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="832.0" reverse="0.0">832.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6678302" product_size="225">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="1.0" reverse="0.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11722834" product_size="227">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1167.0">1167.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11722834" product_size="227">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1027.0">1027.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11722834" product_size="227">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="3.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11722834" product_size="227">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13028059" product_size="229">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="380.0">380.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13028059" product_size="229">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="304.0">304.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9352768" product_size="214">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1247.0">1247.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs9352768" product_size="214">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="7.0">7.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4449484" product_size="223">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2232.0">2232.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4449484" product_size="223">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="13.0">13.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4449484" product_size="223">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="12.0">12.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4449484" product_size="223">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7441242" product_size="215">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="782.0">782.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7441242" product_size="215">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="2.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6482647" product_size="223">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="852.0">852.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6482647" product_size="223">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1104570" product_size="227">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1382.0">1382.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1104570" product_size="227">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2157752" product_size="214">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="514.0" reverse="0.0">514.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2157752" product_size="214">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="507.0" reverse="0.0">507.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4811868" product_size="217">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="879.0">879.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4811868" product_size="217">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11745646" product_size="220">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2223.0">2223.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11745646" product_size="220">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="15.0">15.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11745646" product_size="220">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11927356" product_size="214">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="868.0" reverse="0.0">868.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11927356" product_size="214">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="755.0" reverse="0.0">755.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs11927356" product_size="214">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="1.0" reverse="0.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13031497" product_size="221">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="905.0">905.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs13031497" product_size="221">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="897.0">897.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs17062044" product_size="214">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="511.0">511.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs17062044" product_size="214">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="445.0">445.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs17062044" product_size="214">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2826949" product_size="224">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="685.0" reverse="0.0">685.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2826949" product_size="224">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="649.0" reverse="0.0">649.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2926143" product_size="222">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2298.0">2298.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2926143" product_size="222">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="4.0">4.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1502770" product_size="226">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="811.0">811.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1502770" product_size="226">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="783.0">783.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12386695" product_size="219">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="281.0">281.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12386695" product_size="219">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="279.0">279.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12640116" product_size="216">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1371.0">1371.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12640116" product_size="216">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="7.0">7.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12640116" product_size="216">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2164537" product_size="225">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="2459.0">2459.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2164537" product_size="225">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="5.0">5.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2235254" product_size="216">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="975.0">975.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2235254" product_size="216">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="5.0">5.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12924985" product_size="226">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="652.0" reverse="0.0">652.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12924985" product_size="226">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="624.0" reverse="0.0">624.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1217612" product_size="225">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1494.0">1494.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1217612" product_size="225">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="10.0">10.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs1217612" product_size="225">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10765879" product_size="224">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1379.0">1379.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10765879" product_size="224">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1232.0">1232.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs10765879" product_size="224">
+                    <Genotype>A</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs3801786" product_size="219">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="875.0">875.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs3801786" product_size="219">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="817.0">817.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs3801786" product_size="219">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="1.0">1.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7159423" product_size="220">
+                    <Genotype>T</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="3641.0">3641.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs7159423" product_size="220">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="12.0">12.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6565924" product_size="224">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1492.0" reverse="0.0">1492.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6565924" product_size="224">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1491.0" reverse="0.0">1491.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2715107" product_size="222">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1294.0" reverse="0.0">1294.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2715107" product_size="222">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1261.0" reverse="0.0">1261.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2715107" product_size="222">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="3.0" reverse="0.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs2715107" product_size="222">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="2.0" reverse="0.0">2.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs918331" product_size="215">
+                    <Genotype>C</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1072.0" reverse="0.0">1072.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs918331" product_size="215">
+                    <Genotype>T</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="3.0" reverse="0.0">3.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6421248" product_size="217">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="1717.0">1717.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6421248" product_size="217">
+                    <Genotype>G</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="0.0" reverse="9.0">9.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12362773" product_size="178">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1575.0" reverse="0.0">1575.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs12362773" product_size="178">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1498.0" reverse="0.0">1498.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6536667" product_size="219">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="267.0">267.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs6536667" product_size="219">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="0.0" reverse="240.0">240.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4971514" product_size="218">
+                    <Genotype>G</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1120.0" reverse="0.0">1120.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4971514" product_size="218">
+                    <Genotype>A</Genotype>
+                    <Typed>Yes</Typed>
+                    <Reads forward="1117.0" reverse="0.0">1117.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+                <site locus="rs4971514" product_size="218">
+                    <Genotype>C</Genotype>
+                    <Typed>No</Typed>
+                    <Reads forward="6.0" reverse="0.0">6.0</Reads>
+                    <RepeatSequence></RepeatSequence>
+                </site>
+            </snpSites>
+        </sites>
+    </sample>
+</data>
+
