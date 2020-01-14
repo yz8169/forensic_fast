@@ -57,6 +57,7 @@ class MissionExecActor @Inject()(mission: MissionRow)(implicit val system: Actor
             val sampleIdDir = SampleTool.getSampleIdDir(sample)
             Tool.getOutputXmlFile(workspaceDir).fileCopyToDir(sampleIdDir)
             Tool.produceReadsFile(sampleIdDir)
+            Tool.produceSeqFile(sampleIdDir)
           }
           Utils.execFuture(f)
           "success"

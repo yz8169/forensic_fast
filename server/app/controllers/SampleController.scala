@@ -72,7 +72,43 @@ class SampleController @Inject()(cc: ControllerComponents, formTool: FormTool
       x =>
         val sampleIdDir = SampleTool.getSampleIdDir(x)
         val readsFile = Tool.getReadsFile(sampleIdDir)
-        val json = Utils.getTxtFileJson(readsFile)
+        val json = Utils.getTxtFileJsonNoLower(readsFile)
+        Ok(json)
+    }
+  }
+
+  def getSeqData = Action.async { implicit request =>
+    val data = sampleIdForm.bindFromRequest().get
+    val userId = WebTool.getUserId
+    sampleDao.selectById(userId, data.id).map {
+      x =>
+        val sampleIdDir = SampleTool.getSampleIdDir(x)
+        val readsFile = Tool.getSeqFile(sampleIdDir)
+        val json = Utils.getTxtFileJsonNoLower(readsFile)
+        Ok(json)
+    }
+  }
+
+  def getBasicData = Action.async { implicit request =>
+    val data = sampleIdForm.bindFromRequest().get
+    val userId = WebTool.getUserId
+    sampleDao.selectById(userId, data.id).map {
+      x =>
+        val sampleIdDir = SampleTool.getSampleIdDir(x)
+        val readsFile = Tool.getBasicFile(sampleIdDir)
+        val json = Utils.getTxtFileJsonNoLower(readsFile)
+        Ok(json)
+    }
+  }
+
+  def getStatData = Action.async { implicit request =>
+    val data = sampleIdForm.bindFromRequest().get
+    val userId = WebTool.getUserId
+    sampleDao.selectById(userId, data.id).map {
+      x =>
+        val sampleIdDir = SampleTool.getSampleIdDir(x)
+        val file = Tool.getStatFile(sampleIdDir)
+        val json = Utils.getTxtFileJsonNoLower(file)
         Ok(json)
     }
   }

@@ -28,7 +28,11 @@ object SampleManage {
     initTable
 
     refreshTable()
-    SampleDetail.showDetail("584")
+    SampleDetail.fillBasicData("584")
+    SampleDetail.statPlot("584")
+    SampleDetail.boxPlot("584")
+
+    SampleDetail.init
 
   }
 

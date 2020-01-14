@@ -22,6 +22,10 @@ trait MyDoubleTool {
 
     def log2 = log10(db) / log10(2.0)
 
+    def toFixed(n: Int) = {
+      db.formatted(s"%.${n}f")
+    }
+
 
 
 

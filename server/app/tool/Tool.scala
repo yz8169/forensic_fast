@@ -21,6 +21,7 @@ import scala.collection.parallel.CollectionConverters._
 import scala.xml.{Utility, XML}
 import scala.xml
 import scala.xml.Elem._
+import shared.VarTool._
 
 
 /**
@@ -43,6 +44,8 @@ object Tool {
   val testDir = if (windowsTestDir.exists()) windowsTestDir else linuxTestDir
   val exampleDir = new File(path, "example")
   val userDir = new File(path, "user")
+  val binDir = new File(path, "bin")
+  val fastxBinDir = new File(binDir, "fastx_toolkit/bin")
 
   val jarPath = {
     val inPath = "C:\\workspaceForIDEA\\forensic\\server\\jars"
@@ -115,10 +118,12 @@ object Tool {
 
   def fy(tmpDir: File) = {
     val inputFile = Tool.getInputXmlFile(tmpDir)
+    val inputFaFile = Tool.getInputTxtFile(tmpDir)
     val outFile = Tool.getOutputXmlFile(tmpDir)
     println(Tool.jarPath)
     val command =
       s"""
+         |${Tool.fastxBinDir.unixPath}/fastx_quality_stats -i ${inputFaFile.unixPath} -o stat.txt -Q 33
          |java -jar  ${new File(Tool.jarPath, "fy-1.0-SNAPSHOT.jar").unixPath} fastqToXml -i ${inputFile.getName} -o ${outFile.unixPath}
            """.stripMargin
     CommandData(tmpDir, List(command))
@@ -158,32 +163,122 @@ object Tool {
 
   def produceReadsFile(dir: File) = {
     val xmlFile = new File(dir, "output.xml")
-    case class StrSite(locus: String, genoType: String, reads: String)
+    case class StrSite(locus: String, productSize: String, genoType: String, reads: String)
     val xml = XML.loadFile(xmlFile)
     val strSites = (xml \\ "strSites" \\ "site").toList.map { node =>
       val locus = (node \ "@locus").text
+      val productSize = (node \ "@product_size").text
       val genoType = (node \ "Genotype").text
-      val reads = (node \ "Reads").text
-      StrSite(locus, genoType, reads)
+      val reads = (node \ "Reads").text.toDouble.toInt
+      StrSite(locus, productSize, genoType, reads.toString)
     }
     val strMap = strSites.map { strSite =>
       val t = (strSite.locus, strSite.genoType)
       (t, strSite.reads)
     }.toMap
+    case class StrData(key: (String, String), kind: String)
+    val autoStrs = (xml \\ "Autosomal_STR" \\ "autoStr").toList.flatMap { autoNode =>
+      val locus = (autoNode \ "@Locus").text
+      (autoNode \\ "Genotype").map { node =>
+        val t = (locus, node.text)
+        StrData(t, "Autosomal")
+      }
+    }
+    val yStrs = (xml \\ "Y_STR" \\ "yStr").toList.flatMap { autoNode =>
+      val locus = (autoNode \ "@Locus").text
+      (autoNode \\ "Genotype").map { node =>
+        val t = (locus, node.text)
+        StrData(t, "Y")
+      }
+    }
+
+    val xStrs = (xml \\ "X_STR" \\ "xStr").toList.flatMap { autoNode =>
+      val locus = (autoNode \ "@Locus").text
+      (autoNode \\ "Genotype").map { node =>
+        val t = (locus, node.text)
+        StrData(t, "X")
+      }
+    }
+
+    val strSiteMap = strSites.map { x =>
+      val t = (x.locus, x.genoType)
+      (t, x)
+    }.toMap
+
+    val locusMap = (xml \\ "Autosomal_STR" \\ "autoStr").toList.map { autoNode =>
+      val locus = (autoNode \ "@Locus").text
+      val qc = (autoNode \\ "QC").map { node =>
+        node.text
+      }.mkString(";")
+      (locus, qc)
+    }.toMap
+    val strs = autoStrs ::: yStrs ::: xStrs
+
+    val newLines = List(locusStr, genotypeStr, "Reads", "Qc", "ProductSize", "Kind") :: strs.map { str =>
+      val t = str.key
+      val autoStr = strSiteMap(t)
+      List(t._1, t._2, strMap(t), locusMap.getOrElse(t._1, ""), autoStr.productSize, str.kind)
+    }
+    newLines.toTxtFile(Tool.getReadsFile(dir))
+  }
+
+  def produceSeqFile(dir: File) = {
+    val xmlFile = new File(dir, "output.xml")
+    case class StrSite(locus: String, genoType: String, typed: String, reads: String, repeatSeq: String)
+    val xml = XML.loadFile(xmlFile)
     val autoStrs = (xml \\ "Autosomal_STR" \\ "autoStr").toList.flatMap { autoNode =>
       val locus = (autoNode \ "@Locus").text
       (autoNode \\ "Genotype").map { node =>
         (locus, node.text)
       }
     }
-    val newLines = List("Locus", "GenoType", "Reads") :: autoStrs.map { t =>
-      List(t._1, t._2, strMap(t))
+    val yStrs = (xml \\ "Y_STR" \\ "yStr").toList.flatMap { autoNode =>
+      val locus = (autoNode \ "@Locus").text
+      (autoNode \\ "Genotype").map { node =>
+        (locus, node.text)
+      }
     }
-    newLines.toTxtFile(Tool.getReadsFile(dir))
+
+    val xStrs = (xml \\ "X_STR" \\ "xStr").toList.flatMap { autoNode =>
+      val locus = (autoNode \ "@Locus").text
+      (autoNode \\ "Genotype").map { node =>
+        (locus, node.text)
+      }
+    }
+
+    val strSiteMap = (xml \\ "strSites" \\ "site").toList.map { node =>
+      val locus = (node \ "@locus").text
+      val genoType = (node \ "Genotype").text
+      val reads = (node \ "Reads").text.toDouble.toInt
+      val typed = (node \ "Typed").text
+      val repeatSeq = (node \ "RepeatSequence").text
+      StrSite(locus, genoType, typed, reads.toString, repeatSeq)
+    }.map { x =>
+      val t = (x.locus, x.genoType)
+      (t, x)
+    }.toMap
+    val strs = autoStrs ::: yStrs ::: xStrs
+    val newLines = List(locusStr, genotypeStr, typedAlleleStr, readsStr, repeatSeqStr) :: strs.map { t =>
+      val row = strSiteMap(t)
+      List(row.locus, row.genoType, row.typed, row.reads, row.repeatSeq)
+    }
+    newLines.toTxtFile(Tool.getSeqFile(dir))
   }
 
   def getReadsFile(dir: File) = {
     new File(dir, "reads.txt")
+  }
+
+  def getSeqFile(dir: File) = {
+    new File(dir, "seq.txt")
+  }
+
+  def getBasicFile(dir: File) = {
+    new File(dir, "basic.txt")
+  }
+
+  def getStatFile(dir: File) = {
+    new File(dir, "stat.txt")
   }
 
 

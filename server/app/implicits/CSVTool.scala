@@ -50,6 +50,13 @@ trait CSVTool {
       }
     }
 
+    def lineMapNoLower = {
+      val headers = lines.head
+      lines.drop(1).map { columns =>
+        headers.zip(columns).toMap
+      }
+    }
+
     def selectOneColumn(columnName: String) = {
       val maps = lineMap
       maps.map { map =>

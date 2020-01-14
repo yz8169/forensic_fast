@@ -157,5 +157,9 @@ object Utils {
     Json.toJson(file.txtLines.lineMap)
   }
 
+  def getTxtFileJsonNoLower(file: File) = {
+    Json.toJson(file.txtLines.lineMapNoLower)
+  }
+
 
 }

@@ -43,9 +43,11 @@ lazy val server = (project in file("server")).settings(commonSettings).settings(
     "org.scala-lang.modules" %% "scala-parallel-collections" % "0.2.0",
     "org.typelevel" %% "cats-core" % "2.0.0",
     "javax.mail" % "mail" % "1.4.7",
-    "org.scala-lang" % "scala-reflect" % "2.13.1"
-
-  )
+    "org.scala-lang" % "scala-reflect" % "2.13.1",
+  ),
+  scalacOptions ++= {
+    Seq("-Ymacro-annotations")
+  }
 ).enablePlugins(PlayScala).dependsOn(sharedJvm)
 
 lazy val client = (project in file("client")).settings(commonSettings).settings(
@@ -61,38 +63,14 @@ lazy val client = (project in file("client")).settings(commonSettings).settings(
   )
 ).enablePlugins(ScalaJSPlugin, ScalaJSWeb).dependsOn(sharedJs)
 
-val scala213 = "2.13.1"
-
-val isAtLeastScala213 = Def.setting {
-  import Ordering.Implicits._
-  CrossVersion.partialVersion(scalaVersion.value).exists(_ >= (2, 13))
-}
-
-lazy val pjShared = Seq(
-  crossScalaVersions := Seq(scala213),
-  scalaVersion := scala213,
-  resolvers ++= Seq(
-    "Webjars Bintray" at "https://dl.bintray.com/webjars/maven/",
-    Resolver.sonatypeRepo("releases"),
-    "jitpack" at "https://jitpack.io"
-  ),
-  libraryDependencies ++= {
-    if (isAtLeastScala213.value) Nil
-    else Seq(compilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full))
-  },
-  scalacOptions ++= {
-    if (isAtLeastScala213.value) Seq("-Ymacro-annotations")
-    else Nil
-  }
-)
-
-
 lazy val shared = crossProject(JSPlatform, JVMPlatform)
   .crossType(CrossType.Pure)
   .in(file("shared"))
   .settings(commonSettings)
   .settings(
-    pjShared,
+    scalacOptions ++= {
+      Seq("-Ymacro-annotations")
+    },
     libraryDependencies ++= Seq(
       "com.chuusai" %% "shapeless" % "2.3.3",
       "io.argonaut" %% "argonaut" % "6.2.3",

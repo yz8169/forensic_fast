@@ -14,6 +14,7 @@ import shared.plotly.internals.BetterPrinter
 import shared.plotly.layout._
 import argonaut._
 import argonaut.ArgonautShapeless._
+import myJs.myPkg.jquery.JQuery
 import myJs.myPkg.jsext._
 import shared.plotly.internals.ArgonautCodecsInternals._
 import org.scalajs.dom._
@@ -36,6 +37,15 @@ package object myPlotly {
   implicit val argonautDecodeTrace = DecodeJson.of[Trace]
 
 
+  def newPlot(jq: JQuery, data: Seq[Trace], layout: Layout, config: PlotlyConfigOptions): Unit = {
+    g.Plotly.newPlot(
+      jq,
+      stripNulls(data.asJson),
+      stripNulls(layout.asJson),
+      config
+    )
+  }
+
   def newPlot(div: String, data: Seq[Trace], layout: Layout, config: PlotlyConfigOptions): Unit = {
     g.Plotly.newPlot(
       div,
@@ -43,7 +53,6 @@ package object myPlotly {
       stripNulls(layout.asJson),
       config
     )
-    plotlyAutoScale
   }
 
   def resize: Unit = {

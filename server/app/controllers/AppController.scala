@@ -58,6 +58,9 @@ class AppController @Inject()(cc: ControllerComponents, formTool: FormTool, acco
         controllers.routes.javascript.SampleController.getAllSample,
         controllers.routes.javascript.SampleController.deleteSampleById,
         controllers.routes.javascript.SampleController.getReadsData,
+        controllers.routes.javascript.SampleController.getSeqData,
+        controllers.routes.javascript.SampleController.getBasicData,
+        controllers.routes.javascript.SampleController.getStatData,
 
 
         controllers.routes.javascript.UserController.missionManageBefore,
