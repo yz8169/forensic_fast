@@ -61,6 +61,8 @@ class AppController @Inject()(cc: ControllerComponents, formTool: FormTool, acco
         controllers.routes.javascript.SampleController.getSeqData,
         controllers.routes.javascript.SampleController.getBasicData,
         controllers.routes.javascript.SampleController.getStatData,
+        controllers.routes.javascript.SampleController.getSnpSeqData,
+        controllers.routes.javascript.SampleController.getSnpReadsData,
 
 
         controllers.routes.javascript.UserController.missionManageBefore,

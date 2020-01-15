@@ -56,8 +56,12 @@ class MissionExecActor @Inject()(mission: MissionRow)(implicit val system: Actor
           val f = sampleDao.insertOrUpdate(sample).map { x =>
             val sampleIdDir = SampleTool.getSampleIdDir(sample)
             Tool.getOutputXmlFile(workspaceDir).fileCopyToDir(sampleIdDir)
+            Tool.getStatFile(workspaceDir).fileCopyToDir(sampleIdDir)
             Tool.produceReadsFile(sampleIdDir)
             Tool.produceSeqFile(sampleIdDir)
+            Tool.produceSnpReadsFile(sampleIdDir)
+            Tool.produceSnpSeqFile(sampleIdDir)
+            Tool.produceBasicFile(sampleIdDir)
           }
           Utils.execFuture(f)
           "success"

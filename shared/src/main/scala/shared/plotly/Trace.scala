@@ -196,6 +196,64 @@ object Bar {
     )
 }
 
+@data class Pie(
+                 values: Sequence,
+                 labels: Sequence,
+                 name: Option[String],
+                 text: Option[Seq[String]],
+                 marker: Option[Marker],
+                 orientation: Option[Orientation],
+                 xaxis: Option[AxisReference],
+                 yaxis: Option[AxisReference],
+                 error_y: Option[Error],
+                 showlegend: Option[Boolean],
+                 hoverinfo: Option[HoverInfo],
+                 textposition: Option[BarTextPosition],
+                 opacity: Option[Double],
+                 width: Option[OneOrSeq[Double]],
+                 base: Option[OneOrSeq[Double]],
+                 hovertemplate: Option[String]
+               ) extends Trace
+
+object Pie {
+  def apply(
+             values: Sequence = null,
+             labels: Sequence,
+             name: String = null,
+             text: Seq[String] = null,
+             marker: Marker = null,
+             orientation: Orientation = null,
+             xaxis: AxisReference = null,
+             yaxis: AxisReference = null,
+             error_y: Error = null,
+             showlegend: JBoolean = null,
+             hoverinfo: HoverInfo = null,
+             textposition: BarTextPosition = null,
+             opacity: JDouble = null,
+             width: OneOrSeq[Double] = null,
+             base: OneOrSeq[Double] = null,
+             hovertemplate: String = null,
+           ): Pie =
+    Pie(
+      values,
+      labels,
+      Option(name),
+      Option(text),
+      Option(marker),
+      Option(orientation),
+      Option(xaxis),
+      Option(yaxis),
+      Option(error_y),
+      Option(showlegend).map(b => b: Boolean),
+      Option(hoverinfo),
+      Option(textposition),
+      Option(opacity).map(d => d: Double),
+      Option(width),
+      Option(base),
+      Option(hovertemplate)
+    )
+}
+
 @data class Histogram(
                        x: Option[Sequence],
                        y: Option[Sequence],

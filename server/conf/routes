@@ -42,6 +42,8 @@ GET           /forensic/user/sample/getReadsData                controllers.Samp
 GET           /forensic/user/sample/getSeqData                controllers.SampleController.getSeqData
 GET           /forensic/user/sample/getBasicData                controllers.SampleController.getBasicData
 GET           /forensic/user/sample/getStatData                controllers.SampleController.getStatData
+GET           /forensic/user/sample/getSnpReadsData                controllers.SampleController.getSnpReadsData
+GET           /forensic/user/sample/getSnpSeqData                controllers.SampleController.getSnpSeqData
 
 GET           /forensic/user/tool/downloadExampleData           controllers.ToolController.downloadExampleData
 

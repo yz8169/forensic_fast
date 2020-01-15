@@ -39,7 +39,7 @@ package object myPlotly {
 
   def newPlot(jq: JQuery, data: Seq[Trace], layout: Layout, config: PlotlyConfigOptions): Unit = {
     g.Plotly.newPlot(
-      jq,
+      jq(0),
       stripNulls(data.asJson),
       stripNulls(layout.asJson),
       config

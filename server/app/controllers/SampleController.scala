@@ -77,6 +77,18 @@ class SampleController @Inject()(cc: ControllerComponents, formTool: FormTool
     }
   }
 
+  def getSnpReadsData = Action.async { implicit request =>
+    val data = sampleIdForm.bindFromRequest().get
+    val userId = WebTool.getUserId
+    sampleDao.selectById(userId, data.id).map {
+      x =>
+        val sampleIdDir = SampleTool.getSampleIdDir(x)
+        val readsFile = Tool.getSnpReadsFile(sampleIdDir)
+        val json = Utils.getTxtFileJsonNoLower(readsFile)
+        Ok(json)
+    }
+  }
+
   def getSeqData = Action.async { implicit request =>
     val data = sampleIdForm.bindFromRequest().get
     val userId = WebTool.getUserId
@@ -84,6 +96,18 @@ class SampleController @Inject()(cc: ControllerComponents, formTool: FormTool
       x =>
         val sampleIdDir = SampleTool.getSampleIdDir(x)
         val readsFile = Tool.getSeqFile(sampleIdDir)
+        val json = Utils.getTxtFileJsonNoLower(readsFile)
+        Ok(json)
+    }
+  }
+
+  def getSnpSeqData = Action.async { implicit request =>
+    val data = sampleIdForm.bindFromRequest().get
+    val userId = WebTool.getUserId
+    sampleDao.selectById(userId, data.id).map {
+      x =>
+        val sampleIdDir = SampleTool.getSampleIdDir(x)
+        val readsFile = Tool.getSnpSeqFile(sampleIdDir)
         val json = Utils.getTxtFileJsonNoLower(readsFile)
         Ok(json)
     }

@@ -6,9 +6,8 @@
 			vertical-align: middle;
 			text-align: center;
 		}
+
 </style>
-
-
 
 <div id="result" style="display: none">
 	<div class="row">
@@ -16,14 +15,15 @@
 
 			<div class="portlet blue-dark box">
 				<div class="portlet-title">
-					<div class="caption">
+					<div class="caption" style="cursor: pointer;
+						width: 98%" onclick="Tool.expand(this)">
 						基本信息(<span id="id" class="id"></span>)
 					</div>
 					<div class="tools">
 						<a class="collapse" id="removeClick" disabled="true"></a>
 					</div>
 				</div>
-				<div class="portlet-body" id="noCotent">
+				<div class="portlet-body" id="noCotent" >
 					<div class="tab-pane active" id="tab_1">
 						<div class="tab-pane active" id="tab_1">
 							<div class="form-inline  myInline" id="basicInfo">
@@ -32,28 +32,13 @@
 
 						</div>
 					</div>
-				</div>
-				<div>
-				</div>
-			</div>
-
-			<div class="portlet blue-dark box">
-				<div class="portlet-title">
-					<div class="caption">
-						原始测序数据统计(<span id="id" class="id"></span>)
-					</div>
-					<div class="tools">
-						<a class="collapse" id="removeClick" disabled="true"></a>
-					</div>
-				</div>
-				<div class="portlet-body" id="noCotent">
 					<div class="tab-pane active" id="tab_1">
 						<div class="row" style="">
 							<div class="col-sm-12" style="">
 								<div id="statChart" style="max-width: 50%;
-									height: 500px;width: 600px" class="col-sm-6"></div>
+									width: 600px" class="col-sm-6"></div>
 								<div id="boxPlotChart" style="max-width: 50%;
-									height: 500px;width: 600px" class="col-sm-6"></div>
+									width: 600px" class="col-sm-6"></div>
 							</div>
 						</div>
 
@@ -74,7 +59,7 @@
 					<a href="#xStr" data-toggle="tab"> X STRs </a>
 				</li>
 				<li>
-					<a href="#tab_3" data-toggle="tab"> iSNPs </a>
+					<a href="#snp" data-toggle="tab"> iSNPs </a>
 				</li>
 			</ul>
 
@@ -83,16 +68,17 @@
 				<div class="tab-pane fade in active" id="autoStr">
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点深度信息柱状图(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Autosomal STRs位点深度信息柱状图(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 						</div>
-						<div class="portlet-body" id="noCotent">
-							<div class="tab-pane active" id="tab_1">
-								<div id="autoBarChart" style="max-width: 100%"></div>
+						<div class="portlet-body" id="noCotent" style="display: none">
+							<div class="tab-pane active" id="tab_1" >
+								<div id="barChart" ></div>
 							</div>
 						</div>
 						<div>
@@ -101,16 +87,18 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点长度信息散点图(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Autosomal STRs位点长度信息散点图(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 						</div>
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 							<div class="tab-pane active" id="tab_1">
-								<div id="autoScatterChart" style="max-width: 100%"></div>
+								<div id="scatterChart" style="max-width: 100%"></div>
 							</div>
 						</div>
 						<div>
@@ -119,19 +107,21 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点深度信息(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Autosomal STRs位点深度信息(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 
 						</div>
 
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 
 							<div class="tab-pane active" id="tab_1">
-								<div class="form-inline  myInline" id="autoData">
+								<div class="form-inline  myInline" id="data">
 								</div>
 
 							</div>
@@ -145,16 +135,18 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								原始结果数据(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Autosomal STRs原始结果数据(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" ></a>
+								<a class="expand" id="removeClick" ></a>
 							</div>
 
 						</div>
 
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 
 							<div class="tab-pane active" id="tab_1">
 
@@ -187,16 +179,18 @@
 				<div class="tab-pane" id="yStr">
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点深度信息柱状图(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Y STRs位点深度信息柱状图(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 						</div>
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 							<div class="tab-pane active" id="tab_1">
-								<div id="yBarChart" style="max-width: 100%"></div>
+								<div id="barChart" style="max-width: 100%"></div>
 							</div>
 						</div>
 						<div>
@@ -205,16 +199,17 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点长度信息散点图(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Y STRs位点长度信息散点图(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 						</div>
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 							<div class="tab-pane active" id="tab_1">
-								<div id="yScatterChart" style="max-width: 100%"></div>
+								<div id="scatterChart" style="max-width: 100%"></div>
 							</div>
 						</div>
 						<div>
@@ -223,19 +218,20 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点深度信息(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Y STRs位点深度信息(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 
 						</div>
 
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 
 							<div class="tab-pane active" id="tab_1">
-								<div class="form-inline  myInline" id="yData">
+								<div class="form-inline  myInline" id="data">
 
 								</div>
 
@@ -250,16 +246,110 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								原始结果数据(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								Y STRs原始结果数据(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" ></a>
+								<a class="expand" id="removeClick" ></a>
+							</div>
+						</div>
+						<div class="portlet-body" id="noCotent" style="display: none">
+							<div class="tab-pane active" id="tab_1">
+								<div class="table-responsive">
+									<table class="display table table-bordered" id="seqTable" data-pagination="true" data-search="true"
+									data-toolbar="#toolbar" data-page-list="[10, 25, 50, 100, all]" data-multiple-search="true">
+										<thead>
+										</thead>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="xStr">
+					<div class="portlet blue-dark box">
+						<div class="portlet-title">
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								X STRs位点深度信息柱状图(<span id="id" class="id"></span>)
+							</div>
+							<div class="tools">
+								<a class="expand" id="removeClick" disabled="true"></a>
+							</div>
+						</div>
+						<div class="portlet-body" id="noCotent" style="display: none">
+							<div class="tab-pane active" id="tab_1">
+								<div id="barChart" style="max-width: 100%"></div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+
+					<div class="portlet blue-dark box">
+						<div class="portlet-title">
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								X STRs位点长度信息散点图(<span id="id" class="id"></span>)
+							</div>
+							<div class="tools">
+								<a class="expand" id="removeClick" disabled="true"></a>
+							</div>
+						</div>
+						<div class="portlet-body" id="noCotent" style="display: none">
+							<div class="tab-pane active" id="tab_1">
+								<div id="scatterChart" style="max-width: 100%"></div>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+
+					<div class="portlet blue-dark box">
+						<div class="portlet-title">
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								X STRs位点深度信息(<span id="id" class="id"></span>)
+							</div>
+							<div class="tools">
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 
 						</div>
 
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
+
+							<div class="tab-pane active" id="tab_1">
+								<div class="form-inline  myInline" id="data">
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div>
+
+						</div>
+					</div>
+
+					<div class="portlet blue-dark box">
+						<div class="portlet-title">
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								X STRs原始结果数据(<span id="id" class="id"></span>)
+							</div>
+							<div class="tools">
+								<a class="expand" id="removeClick" ></a>
+							</div>
+
+						</div>
+
+						<div class="portlet-body" id="noCotent" style="display: none">
 							<div class="tab-pane active" id="tab_1">
 								<div class="table-responsive">
 
@@ -287,17 +377,18 @@
 
 				</div>
 
-				<div class="tab-pane" id="xStr">
+				<div class="tab-pane" id="snp">
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点深度信息柱状图(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								iSNPs位点深度信息柱状图(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 						</div>
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 							<div class="tab-pane active" id="tab_1">
 								<div id="barChart" style="max-width: 100%"></div>
 							</div>
@@ -308,16 +399,17 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点长度信息散点图(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								iSNPs位点长度信息散点图(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 						</div>
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 							<div class="tab-pane active" id="tab_1">
-								<div id="yScatterChart" style="max-width: 100%"></div>
+								<div id="scatterChart" style="max-width: 100%"></div>
 							</div>
 						</div>
 						<div>
@@ -326,19 +418,20 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								位点深度信息(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								iSNPs位点深度信息(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" disabled="true"></a>
+								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
 
 						</div>
 
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 
 							<div class="tab-pane active" id="tab_1">
-								<div class="form-inline  myInline" id="yData">
+								<div class="form-inline  myInline" id="data">
 
 								</div>
 
@@ -353,16 +446,17 @@
 
 					<div class="portlet blue-dark box">
 						<div class="portlet-title">
-							<div class="caption">
-								原始结果数据(<span id="id" class="id"></span>)
+							<div class="caption" style="cursor: pointer;
+								width: 98%" onclick="Tool.expand(this)">
+								iSNPs原始结果数据(<span id="id" class="id"></span>)
 							</div>
 							<div class="tools">
-								<a class="collapse" id="removeClick" ></a>
+								<a class="expand" id="removeClick" ></a>
 							</div>
 
 						</div>
 
-						<div class="portlet-body" id="noCotent">
+						<div class="portlet-body" id="noCotent" style="display: none">
 							<div class="tab-pane active" id="tab_1">
 								<div class="table-responsive">
 
@@ -408,7 +502,7 @@
 
 
 				<div class="table-responsive" id="tableContent">
-					<table class="display table table-bordered" id="strDetailTable"
+					<table class="display table table-bordered detailTable" id="detailTable"
 
 					>
 						<thead>
@@ -417,7 +511,52 @@
 
 				</div>
 				<hr>
-				<div id="strDetailChart" style="max-width: 100%"></div>
+				<div align="center">
+					<div id="strDetailChart" style=""></div>
+				</div>
+
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" data-dismiss="modal" class="btn btn-default ">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+		#locusModal #detailTable tr td:last-child {
+			max-width: 50px;
+			width: 50px;
+			overflow-wrap: break-word;
+		}
+
+</style>
+
+<div id="snpModal" class="modal fade myModal">
+	<div class="modal-dialog" style="width: 600px">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" data-dismiss="modal" aria-hidden="true" class="close">
+							&times;</button>
+				<h4 class="modal-title">
+					<span id="number" class="locus"></span>(<span id="number" class="id"></span>)</h4>
+			</div>
+			<div class="modal-body">
+
+				<div class="table-responsive" id="tableContent">
+					<table class="display table table-bordered detailTable" id="detailTable" style="word-break: break-all"
+
+					>
+						<thead>
+						</thead>
+					</table>
+
+				</div>
+				<hr>
+				<div align="center">
+					<div id="detailChart" style=""></div>
+				</div>
 
 
 			</div>

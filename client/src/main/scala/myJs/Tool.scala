@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 import myPkg.jquery._
 import myPkg.Implicits._
+import org.scalajs.dom.Element
 
 /**
  * Created by yz on 2019/3/6
@@ -39,6 +40,12 @@ object Tool {
     if (result != null && result(1).isDefined) {
       result(1).toString.trim
     } else ""
+  }
+
+  @JSExport("expand")
+  def expand(y: Element) = {
+    val tool = $(y).parent().find(".tools a:last")
+    $(tool).click()
 
   }
 

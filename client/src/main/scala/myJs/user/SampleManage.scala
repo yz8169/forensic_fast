@@ -22,15 +22,11 @@ object SampleManage {
 
   val typeTagEmpty = List[TypedTag[String]]()
 
-
   @JSExport("init")
   def init = {
     initTable
 
     refreshTable()
-    SampleDetail.fillBasicData("584")
-    SampleDetail.statPlot("584")
-    SampleDetail.boxPlot("584")
 
     SampleDetail.init
 
