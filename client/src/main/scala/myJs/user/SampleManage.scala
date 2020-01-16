@@ -20,19 +20,12 @@ import myJs.myPkg.bootstrap.Bootstrap.default._
 @JSExportTopLevel("SampleManage")
 object SampleManage {
 
-  val typeTagEmpty = List[TypedTag[String]]()
-
   @JSExport("init")
   def init = {
     initTable
-
     refreshTable()
-
-    SampleDetail.init
-
   }
 
-  @JSExport("refreshUser")
   def refreshTable(f: () => js.Any = () => ()) = {
     val url = g.jsRoutes.controllers.SampleController.getAllSample().url.toString
     val ajaxSettings = JQueryAjaxSettings.url(s"${url}?").contentType("application/json").
@@ -41,7 +34,6 @@ object SampleManage {
       f()
     }
     $.ajax(ajaxSettings)
-
   }
 
   val operateColumn = js.Array(
@@ -93,7 +85,6 @@ object SampleManage {
         )
       )
       Array(viewStr, deleteStr).mkString("&nbsp;")
-
   }
 
   @JSExport("deleteData")

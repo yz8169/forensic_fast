@@ -79,6 +79,7 @@ lazy val shared = crossProject(JSPlatform, JVMPlatform)
 
     )
   )
+
 lazy val sharedJvm = shared.jvm
 lazy val sharedJs = shared.js
 

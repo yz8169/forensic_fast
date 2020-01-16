@@ -1,6 +1,8 @@
 package myJs
 
+import argonaut.{Json, PrettyParams}
 import myJs.myPkg._
+import myJs.myPkg.plotly.Plotly.printer
 import scalatags.Text.all._
 
 import scala.scalajs.js
@@ -8,6 +10,9 @@ import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 import myPkg.jquery._
 import myPkg.Implicits._
 import org.scalajs.dom.Element
+import shared.plotly.internals.BetterPrinter
+
+import scala.scalajs.js.JSON
 
 /**
  * Created by yz on 2019/3/6
@@ -40,6 +45,18 @@ object Tool {
     if (result != null && result(1).isDefined) {
       result(1).toString.trim
     } else ""
+  }
+
+  val printer = BetterPrinter(PrettyParams.nospace.copy(dropNullKeys = true))
+
+  def stripNulls(json: Json): js.Any = {
+    // Remove empty objects
+    JSON.parse(printer.render(json))
+  }
+
+  def stringify(json: Json): js.Any = {
+    val any = stripNulls(json)
+    JSON.stringify(any)
   }
 
   @JSExport("expand")

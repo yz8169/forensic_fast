@@ -9,7 +9,6 @@ import play.api.mvc.{AbstractController, Action, ControllerComponents}
 import utils.Utils
 
 import scala.annotation.tailrec
-import scala.collection.mutable
 import scala.io.Source
 import scala.xml.Utility
 import scala.xml.pull.{EvElemEnd, EvElemStart, EvEntityRef, EvText, XMLEvent, XMLEventReader}

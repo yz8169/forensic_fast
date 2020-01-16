@@ -7,6 +7,12 @@
 			text-align: center;
 		}
 
+		#locusModal #detailTable tr td:last-child {
+			max-width: 50px;
+			width: 50px;
+			overflow-wrap: break-word;
+		}
+
 </style>
 
 <div id="result" style="display: none">
@@ -115,21 +121,14 @@
 							<div class="tools">
 								<a class="expand" id="removeClick" disabled="true"></a>
 							</div>
-
 						</div>
-
 						<div class="portlet-body" id="noCotent" style="display: none">
-
 							<div class="tab-pane active" id="tab_1">
 								<div class="form-inline  myInline" id="data">
 								</div>
-
 							</div>
-
 						</div>
-
 						<div>
-
 						</div>
 					</div>
 
@@ -147,33 +146,19 @@
 						</div>
 
 						<div class="portlet-body" id="noCotent" style="display: none">
-
 							<div class="tab-pane active" id="tab_1">
-
 								<div class="table-responsive">
-
-
 									<table class="display table table-bordered" id="seqTable" data-pagination="true" data-search="true"
 									data-toolbar="#toolbar" data-page-list="[10, 25, 50, 100, all]" data-multiple-search="true">
 										<thead>
-
 										</thead>
 									</table>
-
 								</div>
-
-
 							</div>
-
-
 						</div>
-
-
 						<div>
-
 						</div>
 					</div>
-
 				</div>
 
 				<div class="tab-pane" id="yStr">
@@ -359,22 +344,12 @@
 
 										</thead>
 									</table>
-
 								</div>
-
-
 							</div>
-
-
 						</div>
-
-
 						<div>
-
 						</div>
 					</div>
-
-
 				</div>
 
 				<div class="tab-pane" id="snp">
@@ -524,15 +499,6 @@
 	</div>
 </div>
 
-<style>
-		#locusModal #detailTable tr td:last-child {
-			max-width: 50px;
-			width: 50px;
-			overflow-wrap: break-word;
-		}
-
-</style>
-
 <div id="snpModal" class="modal fade myModal">
 	<div class="modal-dialog" style="width: 600px">
 		<div class="modal-content">
@@ -570,6 +536,8 @@
 
 <script>
 		$(function () {
+		    SampleDetail.init
+
 
 		})
 

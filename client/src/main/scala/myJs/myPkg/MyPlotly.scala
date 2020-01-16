@@ -18,6 +18,7 @@ import myJs.myPkg.jquery.JQuery
 import myJs.myPkg.jsext._
 import shared.plotly.internals.ArgonautCodecsInternals._
 import org.scalajs.dom._
+import myJs.myPkg.jquery._
 
 /**
  * Created by yz on 2019/3/14
@@ -33,10 +34,6 @@ package object myPlotly {
   implicit val argonautEncodeConfig = EncodeJson.of[PlotlyConfig]
   implicit val argonautDecodeConfig = DecodeJson.of[PlotlyConfig]
 
-  implicit val argonautEncodeTrace = EncodeJson.of[Trace]
-  implicit val argonautDecodeTrace = DecodeJson.of[Trace]
-
-
   def newPlot(jq: JQuery, data: Seq[Trace], layout: Layout, config: PlotlyConfigOptions): Unit = {
     g.Plotly.newPlot(
       jq(0),
@@ -44,6 +41,15 @@ package object myPlotly {
       stripNulls(layout.asJson),
       config
     )
+    jq.on("plotly_legendclick", () => {
+      false
+    })
+  }
+
+  def disableLegendClick(div: String) = {
+    $(s"#${div}").on("plotly_legendclick", () => {
+      false
+    })
   }
 
   def newPlot(div: String, data: Seq[Trace], layout: Layout, config: PlotlyConfigOptions): Unit = {
@@ -53,6 +59,7 @@ package object myPlotly {
       stripNulls(layout.asJson),
       config
     )
+    disableLegendClick(div)
   }
 
   def resize: Unit = {

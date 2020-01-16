@@ -52,7 +52,8 @@ trait CSVTool {
 
     def lineMapNoLower = {
       val headers = lines.head
-      lines.drop(1).map { columns =>
+      lines.drop(1).map { tmpColumns =>
+        val columns = tmpColumns.padTo(headers.size, "")
         headers.zip(columns).toMap
       }
     }
@@ -71,7 +72,7 @@ trait CSVTool {
 
     }
 
-    def notEmptyLines = lines.filter(x => x.exists(y=>StringUtils.isNotEmpty(y)))
+    def notEmptyLines = lines.filter(x => x.exists(y => StringUtils.isNotEmpty(y)))
 
 
   }
