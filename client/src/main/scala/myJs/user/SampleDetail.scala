@@ -31,6 +31,9 @@ import argonaut._
 import Argonaut._
 import myJs.Codecs.{ReadsData, SeqData, SnpReadsData, StatData, StrReadsData}
 import myJs.implicits.Implicits._
+import org.scalajs.dom.ext.Ajax
+import scala.concurrent.ExecutionContext.Implicits.global
+
 
 /**
  * Created by yz on 2019/4/25
@@ -149,77 +152,74 @@ object SampleDetail {
     jq.bootstrapTable(options)
   }
 
-  def fillBasicData(idStr: String)(f: () => js.Any = () => ()) = {
+  def fillBasicData(idStr: String) = {
     val id = "basicInfo"
     val url = g.jsRoutes.controllers.SampleController.getBasicData().url.toString
-    val ajaxSettings = JQueryAjaxSettings.url(s"${url}?id=${idStr}").`type`("get").
-      success { (data: js.Any, status: String, e: JQueryXHR) =>
-        val rs = data.asInstanceOf[js.Array[js.Dictionary[String]]]
-        val first1Height = 30
-        val row1 = List("Interlocus Balance", "Single Source", "Total Depth", "Available Depth")
-        val row2 = List("iSNP Loci Typed", "Autosomal Loci Typed", "X Loci Typed", "Y Loci Typed")
-        val row3 = List("STR Average Depth", "STR Depth STD", "STR Num. of Depth < 30", "STR Num. of Depth < 100")
-        val row4 = List("iSNP Average Depth", "iSNP Depth STD")
+    Ajax.get(url = s"${url}?id=${idStr}").map { xhr =>
+      val rs = JSON.parse(xhr.responseText).asInstanceOf[js.Array[js.Dictionary[String]]]
+      val first1Height = 30
+      val row1 = List("Interlocus Balance", "Single Source", "Total Depth", "Available Depth")
+      val row2 = List("iSNP Loci Typed", "Autosomal Loci Typed", "X Loci Typed", "Y Loci Typed")
+      val row3 = List("STR Average Depth", "STR Depth STD", "STR Num. of Depth < 30", "STR Num. of Depth < 100")
+      val row4 = List("iSNP Average Depth", "iSNP Depth STD")
 
-        def getRow(rows: List[String], dict: js.Dictionary[String]) = {
-          rows.map { key =>
-            val value = dict(key)
-            div(cls := "form-group", marginRight := 15, height := 60, marginBottom := 20,
-              table(cls := " table table-bordered strTable", width := 200,
-                tr(height := first1Height, maxHeight := first1Height, minHeight := first1Height,
-                  td(colspan := 2, key, fontWeight := "bold", backgroundColor := "#5E738B", paddingTop := 3, paddingBottom := 3)
-                ),
-                tr(height := first1Height, maxHeight := first1Height, minHeight := first1Height,
-                  td(value, width := "50%", paddingTop := 3, paddingBottom := 3)
-                ),
-              )
+      def getRow(rows: List[String], dict: js.Dictionary[String]) = {
+        rows.map { key =>
+          val value = dict(key)
+          div(cls := "form-group", marginRight := 15, height := 60, marginBottom := 20,
+            table(cls := " table table-bordered strTable", width := 200,
+              tr(height := first1Height, maxHeight := first1Height, minHeight := first1Height,
+                td(colspan := 2, key, fontWeight := "bold", backgroundColor := "#5E738B", paddingTop := 3, paddingBottom := 3)
+              ),
+              tr(height := first1Height, maxHeight := first1Height, minHeight := first1Height,
+                td(value, width := "50%", paddingTop := 3, paddingBottom := 3)
+              ),
             )
-          }.mkString("&nbsp;")
-        }
-
-        val html = rs.map { case dict =>
-          div(
-            all.raw(getRow(row1, dict)),
-            br,
-            all.raw(getRow(row2, dict)),
-            br,
-            all.raw(getRow(row3, dict)),
-            br,
-            all.raw(getRow(row4, dict))
           )
         }.mkString("&nbsp;")
-        $(s"#${id}").html(html)
-        f()
       }
-    $.ajax(ajaxSettings)
+
+      val html = rs.map { case dict =>
+        div(
+          all.raw(getRow(row1, dict)),
+          br,
+          all.raw(getRow(row2, dict)),
+          br,
+          all.raw(getRow(row3, dict)),
+          br,
+          all.raw(getRow(row4, dict))
+        )
+      }.mkString("&nbsp;")
+      $(s"#${id}").html(html)
+    }
   }
 
-  def getStrReadsDatas(rs: js.Array[js.Dictionary[String]]) = {
-    JSON.stringify(rs).decodeOption[List[StrReadsData]].getOrElse(Nil)
+  def getStrReadsDatas(rs: String) = {
+    rs.decodeOption[List[StrReadsData]].getOrElse(Nil)
   }
 
-  def getSeqDatas(rs: js.Array[js.Dictionary[String]]) = {
-    JSON.stringify(rs).decodeOption[List[SeqData]].getOrElse(Nil)
+  def getSeqDatas(rs: String) = {
+    rs.decodeOption[List[SeqData]].getOrElse(Nil)
   }
 
   @JSExport("strDetailShow")
-  def strDetailShow(filterRs: js.Array[js.Dictionary[String]]) = {
-    val seqDatas = getSeqDatas(filterRs)
+  def strDetailShow(str: String) = {
+    val seqDatas = getSeqDatas(str)
     val locus = seqDatas.head.locus
     val modalId = "locusModal"
     $(".locus").text(locus)
-    refreshTable(filterRs, $(s"#${modalId} #detailTable"))
+    refreshTable(JSON.parse(str), $(s"#${modalId} #detailTable"))
     strDetailPlot(seqDatas)
     jQuery(s"#${modalId}").modal("show")
   }
 
   @JSExport("snpDetailShow")
-  def snpDetailShow(filterRs: js.Array[js.Dictionary[String]]) = {
-    val seqDatas = getSeqDatas(filterRs)
+  def snpDetailShow(str: String) = {
+    val seqDatas = getSeqDatas(str)
     val locus = seqDatas.head.locus
     $(".locus").text(locus)
     val modalId = "snpModal"
-    refreshTable(filterRs, $(s"#${modalId} #detailTable"))
+    refreshTable(JSON.parse(str), $(s"#${modalId} #detailTable"))
     SampleSnpDetail.snpDetailPlot(seqDatas)
     jQuery(s"#${modalId}").modal("show")
   }
@@ -241,7 +241,7 @@ object SampleDetail {
         table(cls := " table table-bordered strTable", width := 150,
           tr(height := first1Height, maxHeight := first1Height, minHeight := first1Height,
             td(colspan := 2,
-              a(key, color := "#FFFFFF", onclick := s"SampleDetail.strDetailShow(${Tool.stringify(seqDataRow.asJson)})"),
+              a(key, color := "#FFFFFF", onclick := s"SampleDetail.strDetailShow('${Tool.stringify(seqDataRow.asJson)}')"),
               fontWeight := "bold", backgroundColor := "#5E738B", paddingTop := 3, paddingBottom := 3)
           ),
           if (hasQc) {
@@ -288,7 +288,7 @@ object SampleDetail {
     }
   }
 
-  def statPlot(statDatas: List[StatData])(f: () => js.Any = () => ()) = {
+  def statPlot(statDatas: List[StatData]) = {
     val chartId = "statChart"
     val xs = statDatas.map(_.column)
     val as = statDatas.map(_.aCount)
@@ -339,10 +339,9 @@ object SampleDetail {
     )
     val config = PlotlyConfigOptions.displayModeBar(false)
     myPlotly.newPlot(chartId, plotData, layout, config)
-    f()
   }
 
-  def boxPlot(statDatas: List[StatData])(f: () => js.Any = () => ()) = {
+  def boxPlot(statDatas: List[StatData]) = {
     val chartId = "boxPlotChart"
     val xs = statDatas.map(_.column)
     val binWidth = 1
@@ -385,7 +384,6 @@ object SampleDetail {
     )
     val config = PlotlyConfigOptions.displayModeBar(false)
     myPlotly.newPlot(chartId, plotData, layout, config)
-    f()
   }
 
   def strDetailPlot(strSeqDatas: List[SeqData]) = {
@@ -429,36 +427,19 @@ object SampleDetail {
     }", plotData, layout, config)
   }
 
-  def getReadsData(idStr: String)(f: List[StrReadsData] => js.Any) = {
+  def getReadsData(idStr: String) = {
     val url = g.jsRoutes.controllers.SampleController.getReadsData().url.toString
-    val ajaxSettings = JQueryAjaxSettings.url(s"${
-      url
-    }?id=${
-      idStr
-    }").`type`("get").
-      success {
-        (data: js.Any, status: String, e: JQueryXHR) =>
-          val rs = data.asInstanceOf[js.Array[js.Dictionary[String]]]
-          val readsDatas = getStrReadsDatas(rs)
-          f(readsDatas)
-      }
-    $.ajax(ajaxSettings)
+    Ajax.get(url = s"${url}?id=${idStr}").map { xhr =>
+      getStrReadsDatas(xhr.responseText)
+    }
   }
 
-  def getStatData(idStr: String)(f: List[StatData] => js.Any) = {
+  def getStatData(idStr: String) = {
     val url = g.jsRoutes.controllers.SampleController.getStatData().url.toString
-    val ajaxSettings = JQueryAjaxSettings.url(s"${
-      url
-    }?id=${
-      idStr
-    }").`type`("get").
-      success {
-        (data: js.Any, status: String, e: JQueryXHR) =>
-          val rs = data.asInstanceOf[js.Array[js.Dictionary[String]]]
-          val statDatas = JSON.stringify(rs).decodeOption[List[StatData]].getOrElse(Nil)
-          f(statDatas)
-      }
-    $.ajax(ajaxSettings)
+    Ajax.get(url = s"${url}?id=${idStr}").map { xhr =>
+      xhr.responseText.decodeOption[List[StatData]].getOrElse(Nil)
+    }
+
   }
 
   def autoShow(datas: List[StrReadsData], sepDatas: List[SeqData]) = {
@@ -484,7 +465,6 @@ object SampleDetail {
     }
     val jq = $("#autoStr #seqTable")
     refreshTable(Tool.stripNulls(filterSeqData.asJson), jq)
-
   }
 
   def yShow(datas: List[StrReadsData], seqDatas: List[SeqData]) = {
@@ -508,7 +488,6 @@ object SampleDetail {
     }
     val jq = $("#yStr #seqTable")
     refreshTable(Tool.stripNulls(filterSeqData.asJson), jq)
-
   }
 
   def xShow(datas: List[StrReadsData], seqDatas: List[SeqData]) = {
@@ -535,7 +514,6 @@ object SampleDetail {
       parentId
     } #seqTable")
     refreshTableByJson(filterSeqData.asJson, jq)
-
   }
 
   def barPlot(filterDatas: List[StrReadsData], jq: JQuery) = {
@@ -627,35 +605,18 @@ object SampleDetail {
     myPlotly.newPlot(jq, plotData, layout, config)
   }
 
-  def getSeqData(idStr: String)(f: List[SeqData] => js.Any) = {
+  def getSeqData(idStr: String) = {
     val url = g.jsRoutes.controllers.SampleController.getSeqData().url.toString
-    val ajaxSettings = JQueryAjaxSettings.url(s"${
-      url
-    }?id=${
-      idStr
-    }").contentType("application/json").
-      `type`("get").success {
-      (data: js.Any, status: String, e: JQueryXHR) =>
-        val rs = data.asInstanceOf[js.Array[js.Dictionary[String]]]
-        val seqDatas = getSeqDatas(rs)
-        f(seqDatas)
+    Ajax.get(url = s"${url}?id=${idStr}").map { xhr =>
+      getSeqDatas(xhr.responseText)
     }
-    $.ajax(ajaxSettings)
   }
 
-  def getSnpSeqData(idStr: String)(f: js.Array[js.Dictionary[String]] => js.Any) = {
+  def getSnpSeqData(idStr: String) = {
     val url = g.jsRoutes.controllers.SampleController.getSnpSeqData().url.toString
-    val ajaxSettings = JQueryAjaxSettings.url(s"${
-      url
-    }?id=${
-      idStr
-    }").contentType("application/json").
-      `type`("get").success {
-      (data: js.Any, status: String, e: JQueryXHR) =>
-        val rs = data.asInstanceOf[js.Array[js.Dictionary[String]]]
-        f(rs)
+    Ajax.get(url = s"${url}?id=${idStr}").map { xhr =>
+      getSeqDatas(xhr.responseText)
     }
-    $.ajax(ajaxSettings)
   }
 
   @JSExport("showDetail")
@@ -663,35 +624,25 @@ object SampleDetail {
     $("#result").hide()
     val index = layer.load(1, Tool.layerOptions.shade(js.Array("0.1", "#fff")))
     $(".id").text(idStr)
-    fillBasicData(idStr) { () =>
-      getStatData(idStr) {
-        statDatas =>
-          statPlot(statDatas)()
-          boxPlot(statDatas)()
 
-          getReadsData(idStr) { readsDatas =>
-            getSeqData(idStr) {
-              seqDatas =>
-                autoShow(readsDatas, seqDatas)
-                yShow(readsDatas, seqDatas)
-                xShow(readsDatas, seqDatas)
+    val statF = getStatData(idStr).map { statDatas =>
+      statPlot(statDatas)
+      boxPlot(statDatas)
+    }
+    val strF = getReadsData(idStr).zip(getSeqData(idStr)).map { case (readsDatas, seqDatas) =>
+      autoShow(readsDatas, seqDatas)
+      yShow(readsDatas, seqDatas)
+      xShow(readsDatas, seqDatas)
+    }
+    val snpF = SampleSnpDetail.getSnpReadsData(idStr).zip(getSnpSeqData(idStr)).map { case (snpReadsDatas, snpSeqDatas) =>
+      SampleSnpDetail.snpShow(snpReadsDatas, snpSeqDatas)
+    }
 
-                SampleSnpDetail.getSnpReadsData(idStr) {
-                  snpReadsData =>
-                    getSnpSeqData(idStr) {
-                      snpSeqData =>
-                        SampleSnpDetail.snpShow(snpReadsData, snpSeqData)
-                        $("#result").show()
-                        layer.close(index)
-                        val target_top = $("#result").offset().top
-                        jQuery("html,body").animate(js.Dictionary("scrollTop" -> target_top), JQueryAnimationSettings.duration(800))
-                    }
-                }
-            }
-          }
-      }
-
-
+    fillBasicData(idStr).zip(statF).zip(strF).zip(snpF).foreach { x =>
+      $("#result").show()
+      layer.close(index)
+      val target_top = $("#result").offset().top
+      jQuery("html,body").animate(js.Dictionary("scrollTop" -> target_top), JQueryAnimationSettings.duration(800))
     }
 
   }
@@ -713,8 +664,8 @@ object SampleDetail {
 
     val plotData = Seq(
       Scatter(
-        xs,
-        reads,
+        values = xs,
+        secondValues = reads,
         marker = Marker(
         ),
         mode = ScatterMode(Markers),

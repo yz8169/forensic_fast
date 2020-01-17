@@ -11,8 +11,10 @@ import scala.scalajs.js.JSON
 import shared.implicits.Implicits._
 import argonaut._
 import Argonaut._
+import myJs.Tool
 import myJs.Utils.g
 import myJs.myPkg.{PlotlyConfigOptions, myPlotly}
+import org.scalajs.dom.ext.Ajax
 import shared.plotly.{Bar, Pie}
 import shared.plotly.Sequence.{Doubles, Strings}
 import shared.plotly.element.Anchor.Top
@@ -21,33 +23,27 @@ import shared.plotly.element.{Anchor, AxisType, HoverInfo, Marker}
 import shared.plotly.layout.HoverMode.Closest
 import shared.plotly.layout.Ref.{Paper, XRef}
 import shared.plotly.layout.{Annotation, Axis, Font, Layout, Margin}
+import scala.concurrent.ExecutionContext.Implicits.global
+import shared.implicits.Implicits._
 
 /**
  * Created by Administrator on 2020/1/16
  */
 object SampleSnpDetail {
 
-  def array2SnpReadsDatas(rs: js.Array[js.Dictionary[String]]) = {
-    JSON.stringify(rs).decodeOption[List[SnpReadsData]].getOrElse(Nil)
+  def str2SnpReadsDatas(rs: String) = {
+    rs.decodeOption[List[SnpReadsData]].getOrElse(Nil)
   }
 
-  def getSnpReadsData(idStr: String)(f: List[SnpReadsData] => js.Any) = {
+  def getSnpReadsData(idStr: String) = {
     val url = g.jsRoutes.controllers.SampleController.getSnpReadsData().url.toString
-    val ajaxSettings = JQueryAjaxSettings.url(s"${
-      url
-    }?id=${
-      idStr
-    }").`type`("get").
-      success {
-        (data: js.Any, status: String, e: JQueryXHR) =>
-          val rs = data.asInstanceOf[js.Array[js.Dictionary[String]]]
-          val readsDatas = array2SnpReadsDatas(rs)
-          f(readsDatas)
-      }
-    $.ajax(ajaxSettings)
+    Ajax.get(url = s"${url}?id=${idStr}").map { xhr =>
+      str2SnpReadsDatas(xhr.responseText)
+    }
+
   }
 
-  def snpShow(datas: List[SnpReadsData], seqData: js.Array[js.Dictionary[String]]) = {
+  def snpShow(datas: List[SnpReadsData], seqDatas: List[SeqData]) = {
     val filterDatas = datas
     val parentId = "snp"
     snpBarPlot(filterDatas, $(s"#${
@@ -56,22 +52,22 @@ object SampleSnpDetail {
     scatterPlot(filterDatas, $(s"#${
       parentId
     } #scatterChart"))
-    SampleSnpDetail.fillSnpReadsData(filterDatas, seqData, $(s"#${
+    SampleSnpDetail.fillSnpReadsData(filterDatas, seqDatas, $(s"#${
       parentId
     } #data"))
     val ts = filterDatas.map {
       x =>
         (x.locus, x.genotype)
     }
-    val filterSeqData = seqData.filter {
-      dict =>
-        val t = (dict(locusStr), dict(genotypeStr))
+    val filterSeqData = seqDatas.filter {
+      x =>
+        val t = (x.locus, x.genotype)
         ts.contains(t)
     }
     val jq = $(s"#${
       parentId
     } #seqTable")
-    refreshTable(filterSeqData, jq)
+    refreshTable(Tool.stripNulls(filterSeqData.asJson), jq)
 
   }
 
@@ -80,7 +76,7 @@ object SampleSnpDetail {
       (x.genotype + x.locus, x.reads)
     }
     val xs = map.map(_._1).indices
-    val reads = map.map(_._2).toList
+    val reads = map.map(_._2)
     val dbColors = List("#A01DDD", "#FFA142")
     val locuss = filterDatas.map(_.locus)
     val distLocus = locuss.distinct
@@ -93,12 +89,10 @@ object SampleSnpDetail {
       (x.locus, x.genotype)
     }.groupMap(_._1)(_._2).view.mapValues(_.size).toMap
 
-    import shared.implicits.Implicits._
-
     val locusGenotypesMap = filterDatas.map {
       x =>
         (x.locus, x.genotype)
-    }.toList.groupSeqMap
+    }.groupSeqMap
     val colors = locusGenotypesMap.zipWithIndex.flatMap {
       case (inMap, i) =>
         val colorStr = if (i % 2 == 0) {
@@ -116,11 +110,11 @@ object SampleSnpDetail {
         }<br>Depth:${
           x.reads
         }"
-    }.toList
+    }
     val plotData = Seq(
       Bar(
-        xs,
-        reads,
+        x = xs,
+        y = reads,
         marker = Marker(
           color = colors
         ),
@@ -172,7 +166,7 @@ object SampleSnpDetail {
     myPlotly.newPlot(jq, plotData, layout, config)
   }
 
-  def fillSnpReadsData(datas: List[SnpReadsData], seqData: js.Array[js.Dictionary[String]], jq: JQuery) = {
+  def fillSnpReadsData(datas: List[SnpReadsData], seqDatas: List[SeqData], jq: JQuery) = {
     case class GenotypeData(genotype: String, reads: String)
     val genotypeMap = datas.map { x =>
       (x.locus, GenotypeData(x.genotype, x.reads))
@@ -184,14 +178,12 @@ object SampleSnpDetail {
     val html = genotypeMap.map { case (key, genotypes) =>
       val hasQc = qcMap.get(key).isDefined
       val myBackgroundColor = "#FABD82"
-      val seqDataRow = seqData.filter { dict =>
-        dict(locusStr) == key
-      }
+      val seqDataRow = seqDatas.filter(_.locus == key)
       div(cls := "form-group", marginRight := 15, height := 120, marginBottom := 20,
         table(cls := " table table-bordered strTable", width := 150,
           tr(height := first1Height, maxHeight := first1Height, minHeight := first1Height,
             td(colspan := 2,
-              a(key, color := "#FFFFFF", onclick := s"SampleDetail.snpDetailShow(${JSON.stringify(seqDataRow)})"),
+              a(key, color := "#FFFFFF", onclick := s"SampleDetail.snpDetailShow('${Tool.stringify(seqDataRow.asJson)}')"),
               fontWeight := "bold", backgroundColor := "#5E738B", paddingTop := 3, paddingBottom := 3)
           ),
           if (hasQc) {
@@ -269,6 +261,5 @@ object SampleSnpDetail {
     val config = PlotlyConfigOptions.displayModeBar(false)
     myPlotly.newPlot($("#snpModal #detailChart"), plotData, layout, config)
   }
-
 
 }
