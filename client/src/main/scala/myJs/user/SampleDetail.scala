@@ -25,14 +25,18 @@ import shared.implicits.Implicits._
 import scalatags.Text.all._
 import shared.plotly.element.ScatterMode.Markers
 import shared.plotly.layout.HoverMode.{Closest, YMode}
-import shared.VarTool._
 import shared.implicits.Implicits._
 import argonaut._
 import Argonaut._
-import myJs.Codecs.{ReadsData, SeqData, SnpReadsData, StatData, StrReadsData}
+import myJs.Codecs._
 import myJs.implicits.Implicits._
 import org.scalajs.dom.ext.Ajax
+
 import scala.concurrent.ExecutionContext.Implicits.global
+import shared.Pojo._
+
+import scala.collection.SeqMap
+import scala.scalajs.js.JSConverters._
 
 
 /**
@@ -89,15 +93,15 @@ object SampleDetail {
   }
 
   def initStrTable = {
-    val columnNames = js.Array(genotypeStr, "typedAllele", "Reads", "repeatSeq")
+    val map = SeqMap(
+      "genotype" -> "Allele Name",
+      "typedAllele" -> "Typed Allele",
+      "reads" -> "Reads",
+      "repeatSeq" -> "Repeat Sequence"
+    )
+    val columnNames =map.keys.toJSArray
     val columns = columnNames.map { columnName =>
-      val title = columnName match {
-        case x if x == genotypeStr => "Allele Name"
-        case "typedAllele" => "Typed Allele"
-        case "Reads" => "Reads"
-        case "repeatSeq" => "Repeat Sequence"
-        case _ => columnName
-      }
+      val title =map.getOrElse(columnName,columnName)
       ColumnOptions.field(columnName).title(title).sortable(true)
     }
     val options = TableOptions.columns(columns)
@@ -105,14 +109,14 @@ object SampleDetail {
   }
 
   def initSnpDetailTable = {
-    val columnNames = js.Array(genotypeStr, "typedAllele", "Reads")
+    val map = SeqMap(
+      "genotype" -> "Allele Name",
+      "typedAllele" -> "Typed Allele",
+      "reads" -> "Reads"
+    )
+    val columnNames =map.keys.toJSArray
     val columns = columnNames.map { columnName =>
-      val title = columnName match {
-        case x if x == genotypeStr => "Allele Name"
-        case "typedAllele" => "Typed Allele"
-        case "Reads" => "Reads"
-        case _ => columnName
-      }
+      val title =map.getOrElse(columnName,columnName)
       ColumnOptions.field(columnName).title(title).sortable(true)
     }
     val options = TableOptions.columns(columns)
@@ -120,16 +124,16 @@ object SampleDetail {
   }
 
   def initStrSeqTable(jq: JQuery) = {
-    val columnNames = js.Array("Locus", genotypeStr, "typedAllele", "Reads", "repeatSeq")
+    val map = SeqMap(
+      "locus" -> "Locus",
+      "genotype" -> "Allele Name",
+      "typedAllele" -> "Typed Allele",
+      "reads" -> "Reads",
+      "repeatSeq" -> "Repeat Sequence"
+    )
+    val columnNames =map.keys.toJSArray
     val columns = columnNames.map { columnName =>
-      val title = columnName match {
-        case "Locus" => "Locus"
-        case x if x == genotypeStr => "Allele Name"
-        case "typedAllele" => "Typed Allele"
-        case "Reads" => "Reads"
-        case "repeatSeq" => "Repeat Sequence"
-        case _ => columnName
-      }
+      val title =map.getOrElse(columnName,columnName)
       ColumnOptions.field(columnName).title(title).sortable(true)
     }
     val options = TableOptions.columns(columns)
@@ -137,15 +141,15 @@ object SampleDetail {
   }
 
   def initSnpSeqTable(jq: JQuery) = {
-    val columnNames = js.Array("Locus", genotypeStr, "typedAllele", "Reads")
+    val map = SeqMap(
+      "locus" -> "Locus",
+      "genotype" -> "Allele Name",
+      "typedAllele" -> "Typed Allele",
+      "reads" -> "Reads",
+    )
+    val columnNames = map.keys.toJSArray
     val columns = columnNames.map { columnName =>
-      val title = columnName match {
-        case "Locus" => "Locus"
-        case x if x == genotypeStr => "Allele Name"
-        case "typedAllele" => "Typed Allele"
-        case "Reads" => "Reads"
-        case _ => columnName
-      }
+      val title =map.getOrElse(columnName,columnName)
       ColumnOptions.field(columnName).title(title).sortable(true)
     }
     val options = TableOptions.columns(columns)
@@ -439,7 +443,6 @@ object SampleDetail {
     Ajax.get(url = s"${url}?id=${idStr}").map { xhr =>
       xhr.responseText.decodeOption[List[StatData]].getOrElse(Nil)
     }
-
   }
 
   def autoShow(datas: List[StrReadsData], sepDatas: List[SeqData]) = {

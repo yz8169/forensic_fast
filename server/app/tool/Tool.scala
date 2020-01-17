@@ -15,6 +15,7 @@ import utils.Utils
 import scala.collection.JavaConverters._
 import implicits.Implicits._
 import play.api.libs.json.Json
+import shared.Pojo.{SeqData, SnpReadsData, StrReadsData}
 
 import scala.collection.parallel.ForkJoinTaskSupport
 import scala.collection.parallel.CollectionConverters._
@@ -176,27 +177,36 @@ object Tool {
       val t = (strSite.locus, strSite.genoType)
       (t, strSite.reads)
     }.toMap
-    case class StrData(key: (String, String), kind: String)
+    case class StrData(key: (String, String), kind: String, qc: String)
     val autoStrs = (xml \\ "Autosomal_STR" \\ "autoStr").toList.flatMap { autoNode =>
       val locus = (autoNode \ "@Locus").text
+      val qc = (autoNode \\ "QC").map { node =>
+        node.text
+      }.mkString(";")
       (autoNode \\ "Genotype").map { node =>
         val t = (locus, node.text)
-        StrData(t, "Autosomal")
+        StrData(t, "Autosomal", qc)
       }
     }
     val yStrs = (xml \\ "Y_STR" \\ "yStr").toList.flatMap { autoNode =>
       val locus = (autoNode \ "@Locus").text
+      val qc = (autoNode \\ "QC").map { node =>
+        node.text
+      }.mkString(";")
       (autoNode \\ "Genotype").map { node =>
         val t = (locus, node.text)
-        StrData(t, "Y")
+        StrData(t, "Y", qc)
       }
     }
 
     val xStrs = (xml \\ "X_STR" \\ "xStr").toList.flatMap { autoNode =>
       val locus = (autoNode \ "@Locus").text
+      val qc = (autoNode \\ "QC").map { node =>
+        node.text
+      }.mkString(";")
       (autoNode \\ "Genotype").map { node =>
         val t = (locus, node.text)
-        StrData(t, "X")
+        StrData(t, "X", qc)
       }
     }
 
@@ -204,21 +214,14 @@ object Tool {
       val t = (x.locus, x.genoType)
       (t, x)
     }.toMap
-
-    val locusMap = (xml \\ "Autosomal_STR" \\ "autoStr").toList.map { autoNode =>
-      val locus = (autoNode \ "@Locus").text
-      val qc = (autoNode \\ "QC").map { node =>
-        node.text
-      }.mkString(";")
-      (locus, qc)
-    }.toMap
     val strs = autoStrs ::: yStrs ::: xStrs
 
-    val newLines = List(locusStr, genotypeStr, "Reads", "Qc", "ProductSize", "Kind") :: strs.map { str =>
+    val strReadsDatas = strs.map { str =>
       val t = str.key
       val autoStr = strSiteMap(t)
-      List(t._1, t._2, strMap(t), locusMap.getOrElse(t._1, ""), autoStr.productSize, str.kind)
+      StrReadsData(t._1, t._2, strMap(t), str.qc, autoStr.productSize, str.kind)
     }
+    val newLines = Utils.getLinesByTs(strReadsDatas)
     newLines.toTxtFile(Tool.getReadsFile(dir))
   }
 
@@ -257,10 +260,12 @@ object Tool {
       (locus, qc)
     }.toMap
 
-    val newLines = List(locusStr, genotypeStr, "Reads", "Qc", "ProductSize") :: snps.map { t =>
+    val snpReadsDatas = snps.map { t =>
       val autoStr = siteMap(t)
-      List(t._1, t._2, snpMap(t), locusMap.getOrElse(t._1, ""), autoStr.productSize)
+      SnpReadsData(t._1, t._2, snpMap(t), locusMap.getOrElse(t._1, ""), autoStr.productSize)
     }
+
+    val newLines = Utils.getLinesByTs(snpReadsDatas)
     newLines.toTxtFile(Tool.getSnpReadsFile(dir))
   }
 
@@ -300,10 +305,13 @@ object Tool {
       (t, x)
     }.toMap
     val strs = autoStrs ::: yStrs ::: xStrs
-    val newLines = List(locusStr, genotypeStr, typedAlleleStr, readsStr, repeatSeqStr) :: strs.map { t =>
+
+    val seqDatas = strs.map { t =>
       val row = strSiteMap(t)
-      List(row.locus, row.genoType, row.typed, row.reads, row.repeatSeq)
+      SeqData(row.locus, row.genoType, row.typed, row.reads, row.repeatSeq)
     }
+
+    val newLines = Utils.getLinesByTs(seqDatas)
     newLines.toTxtFile(Tool.getSeqFile(dir))
   }
 
@@ -329,10 +337,12 @@ object Tool {
       val t = (x.locus, x.genoType)
       (t, x)
     }.toMap
-    val newLines = List(locusStr, genotypeStr, typedAlleleStr, readsStr, repeatSeqStr) :: snps.map { t =>
+    val seqDatas = snps.map { t =>
       val row = strSiteMap(t)
-      List(row.locus, row.genoType, row.typed, row.reads, row.repeatSeq)
+      SeqData(row.locus, row.genoType, row.typed, row.reads, row.repeatSeq)
     }
+
+    val newLines = Utils.getLinesByTs(seqDatas)
     newLines.toTxtFile(Tool.getSnpSeqFile(dir))
   }
 

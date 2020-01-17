@@ -1,10 +1,10 @@
 package myJs.user
 
-import myJs.Codecs.{SeqData, SnpReadsData, StrReadsData}
+import myJs.Codecs._
 import myJs.myPkg.jquery.{$, JQuery, JQueryAjaxSettings, JQueryXHR}
 import myJs.user.SampleDetail.{getGenotypeCol, refreshTable, scatterPlot}
 import scalatags.Text.all._
-import shared.VarTool.{genotypeStr, locusStr}
+import shared.VarTool._
 
 import scala.scalajs.js
 import scala.scalajs.js.JSON
@@ -25,6 +25,7 @@ import shared.plotly.layout.Ref.{Paper, XRef}
 import shared.plotly.layout.{Annotation, Axis, Font, Layout, Margin}
 import scala.concurrent.ExecutionContext.Implicits.global
 import shared.implicits.Implicits._
+import shared.Pojo._
 
 /**
  * Created by Administrator on 2020/1/16

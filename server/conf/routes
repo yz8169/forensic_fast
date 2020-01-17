@@ -39,11 +39,11 @@ GET           /forensic/user/sample/sampleManageBefore          controllers.Samp
 GET           /forensic/user/sample/getAllSample                controllers.SampleController.getAllSample
 DELETE        /forensic/user/sample/deleteSampleById            controllers.SampleController.deleteSampleById
 GET           /forensic/user/sample/getReadsData                controllers.SampleController.getReadsData
-GET           /forensic/user/sample/getSeqData                controllers.SampleController.getSeqData
+GET           /forensic/user/sample/getSeqData                  controllers.SampleController.getSeqData
 GET           /forensic/user/sample/getBasicData                controllers.SampleController.getBasicData
-GET           /forensic/user/sample/getStatData                controllers.SampleController.getStatData
-GET           /forensic/user/sample/getSnpReadsData                controllers.SampleController.getSnpReadsData
-GET           /forensic/user/sample/getSnpSeqData                controllers.SampleController.getSnpSeqData
+GET           /forensic/user/sample/getStatData                 controllers.SampleController.getStatData
+GET           /forensic/user/sample/getSnpReadsData             controllers.SampleController.getSnpReadsData
+GET           /forensic/user/sample/getSnpSeqData               controllers.SampleController.getSnpSeqData
 
 GET           /forensic/user/tool/downloadExampleData           controllers.ToolController.downloadExampleData
 

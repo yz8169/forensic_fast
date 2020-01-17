@@ -56,7 +56,6 @@ class SampleController @Inject()(cc: ControllerComponents, formTool: FormTool
 
   def deleteSampleById = Action.async {
     implicit request =>
-      println("atsg")
       val data = sampleIdForm.bindFromRequest().get
       val userId = WebTool.getUserId
       sampleDao.deleteById(userId, data.id).map {

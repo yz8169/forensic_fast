@@ -21,73 +21,18 @@ import scala.xml.XML
  */
 object Test {
 
-  import dataclass.data
-
-  case class Employee(name: String, number: Int, manager: Boolean)
-
-  case class IceCream(name: String, numCherries: Int, inCone: Boolean)
-
-  def employeeCsv(e: Employee): List[String] =
-    List(e.name, e.number.toString, e.manager.toString)
-
-  def iceCreamCsv(c: IceCream): List[String] =
-    List(c.name, c.numCherries.toString, c.inCone.toString)
-
-  val genericEmployee = Generic[Employee].to(Employee("Dave", 123, false))
-
-  val genericIceCream = Generic[IceCream].to(IceCream("Sundae", 1, false))
-
-  def genericCsv(gen: String :: Int :: Boolean :: HNil): List[String] =
-    List(gen(0), gen(1).toString, gen(2).toString)
-
   def main(args: Array[String]): Unit = {
 
-    val repr = "Hello" :: 123 :: true :: HNil
-    println(repr)
 
-    implicit def alwaysIncludeCodecFor[T]: derive.JsonProductCodecFor[T] =
-      derive.JsonProductCodecFor.alwaysIncludeDefaultValue
+        val dir = new File("D:\\forensic_database\\user\\13\\sample\\584")
 
-    case class Identity(firstName: String, lastName: String)
+//        Tool.produceReadsFile(dir)
 
-    case class CC(i: Int = 4, s: String = "foo")
+        Tool.produceSnpReadsFile(dir)
 
-    implicit def typeFieldJsonSumCodecFor[S]: JsonSumCodecFor[S] =
-      JsonSumCodecFor(JsonSumCodec.typeField)
+        Tool.produceSeqFile(dir)
 
-    case class Custom(s: String)
-
-    object Custom {
-      implicit def encode: EncodeJson[Custom] =
-        EncodeJson.of[String].contramap[Custom](_.s)
-
-      implicit def decode: DecodeJson[Custom] =
-        DecodeJson.of[String].map(Custom(_))
-    }
-
-    @JsonCodec sealed trait ADT
-    case class First(i: Int) extends ADT
-    case class Second(s: String) extends ADT
-    object ADT // this one's required
-
-
-    println(Custom("a").asJson.nospaces)
-
-
-
-
-
-
-
-    //    val dir = new File("D:\\forensic_database\\user\\13\\sample\\584")
-
-    //    Tool.produceReadsFile(dir)
-
-    //    Tool.produceSnpReadsFile(dir)
-
-    //    Tool.produceSeqFile(dir)
-
-    //    Tool.produceSnpSeqFile(dir)
+        Tool.produceSnpSeqFile(dir)
 
 
   }

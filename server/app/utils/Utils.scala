@@ -128,6 +128,26 @@ object Utils {
     }.notEmptyLines
   }
 
+  def getLinesByTs[T](ys: List[T]) = {
+    val fieldsOp = ys.headOption.map { y =>
+      y.getClass.getDeclaredFields.toList.map { x: Field =>
+        x
+      }
+    }
+    val lines = ys.map { y =>
+      val fields = fieldsOp.get
+      fields.map { x: Field =>
+        x.setAccessible(true)
+        val kind = x.get(y)
+        getValue(kind, "")
+      }
+    }
+    fieldsOp.map { fields =>
+      val headers = fields.map(_.getName)
+      headers :: lines
+    }.getOrElse(List[List[String]]())
+  }
+
   def pdf2png(tmpDir: File, fileName: String) = {
     val pdfFile = new File(tmpDir, fileName)
     val outFileName = fileName.substring(0, fileName.lastIndexOf(".")) + ".png"
